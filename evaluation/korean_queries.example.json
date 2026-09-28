@@ -1,0 +1,11 @@
+[
+  {
+    "repository": "owner/repository",
+    "query_number": 123,
+    "target_number": 100,
+    "source_url": "https://github.com/owner/repository/issues/123#issuecomment-REPLACE",
+    "language": "ko",
+    "query_text": "사람이 검토한 한국어 문제 설명을 작성하세요. 정답 Issue 번호는 포함하지 않습니다.",
+    "reviewed_by": ""
+  }
+]

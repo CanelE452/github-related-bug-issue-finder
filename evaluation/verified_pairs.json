@@ -1,0 +1,13 @@
+[
+  {
+    "repository": "huggingface/transformers",
+    "query_number": 47332,
+    "target_number": 47333,
+    "source_url": "https://github.com/huggingface/transformers/issues/47332",
+    "evidence": "github_closed_as_duplicate_banner",
+    "source_text": "Closed as duplicate of #47333",
+    "verified_at": "2026-09-28",
+    "verification_method": "Read the explicit GitHub issue status banner; not inferred from title similarity or labels.",
+    "language": "en"
+  }
+]
