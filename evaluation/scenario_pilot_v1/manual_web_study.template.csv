@@ -1,0 +1,13 @@
+﻿case_id,condition,participant_id,started_at,finished_at,elapsed_seconds,first_direct_url,evidence_url,reason,review_status
+O-S1,github_search,,,,,,,,PENDING_MANUAL_STUDY
+O-S1,web_search,,,,,,,,PENDING_MANUAL_STUDY
+O-S1,issue_finder,,,,,,,,PENDING_MANUAL_STUDY
+O-C1,github_search,,,,,,,,PENDING_MANUAL_STUDY
+O-C1,web_search,,,,,,,,PENDING_MANUAL_STUDY
+O-C1,issue_finder,,,,,,,,PENDING_MANUAL_STUDY
+T-S1,github_search,,,,,,,,PENDING_MANUAL_STUDY
+T-S1,web_search,,,,,,,,PENDING_MANUAL_STUDY
+T-S1,issue_finder,,,,,,,,PENDING_MANUAL_STUDY
+T-C1,github_search,,,,,,,,PENDING_MANUAL_STUDY
+T-C1,web_search,,,,,,,,PENDING_MANUAL_STUDY
+T-C1,issue_finder,,,,,,,,PENDING_MANUAL_STUDY

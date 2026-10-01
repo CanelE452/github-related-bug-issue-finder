@@ -1,0 +1,692 @@
+{
+  "created_at": "2026-10-01T02:32:48.394343+00:00",
+  "config": {
+    "protocol_version": "scenario_pilot_v1",
+    "seed": 20261001,
+    "repositories": [
+      "opencv/opencv",
+      "huggingface/transformers"
+    ],
+    "source_mode": "fresh",
+    "max_pages": 20,
+    "max_http_calls": 100,
+    "max_compute_seconds": 5400,
+    "model": "intfloat/multilingual-e5-small",
+    "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "chunk_size": 448,
+    "chunk_overlap": 64,
+    "bug_labels": [
+      "bug"
+    ],
+    "methods": [
+      "bm25",
+      "semantic",
+      "hybrid"
+    ],
+    "scopes": [
+      "C_raw",
+      "C_bug"
+    ],
+    "sample_documents": 20,
+    "historical_probes": [
+      [
+        "opencv/opencv",
+        17687
+      ],
+      [
+        "huggingface/transformers",
+        24694
+      ]
+    ],
+    "query_origin": "reconstructed_from_issue",
+    "human_review_required": true
+  },
+  "config_hash": "7a1f7aa378355c5bcf501741cebc758d25cf1b772c8f922cbbba47bd93af9646",
+  "code_revision": "cf9e3e24e0b432fb9f98e30d92d46d5c2b604369",
+  "code_hashes": {
+    "backend/app/search.py": "b1d07d4eb4562057776e7e9f2bafcd41bea321c5a1c259dad5ac09257b82d0d8",
+    "backend/app/domain.py": "1f0943382b580827ff11de2c71230e76bbca2855c8b768e5a064fd07b9bceb3c",
+    "backend/app/github.py": "ff109a41e894f65b1761c1b5d8521d5720f9001f5bf109527ea8c98dcb76b388",
+    "backend/app/semantic.py": "e5b7fd30daeaf7b8e84c9813a8570724b0c26bd2b660e84b080ef9025fd528bb",
+    "backend/app/config.py": "92de1c3111898abed1e170ac5d2ca5447c9898ca82ab43b71ea1b96dcf70270d",
+    "backend/app/storage.py": "091cca15142b2668c79cef2b026ec2b4f2dc6683dab002651b269da649c5f524",
+    "evaluation/scenario_eval.py": "8dcdb0fdf0cc03d5e71dd1231d141601ddd78845bf02dacc7f68e083649b6589",
+    "evaluation/scenario_report.py": "c4b6b56b71a3ea0a14d45e5ab3caf00b42326011716d29973464993c2846dfb9"
+  },
+  "working_diff_hash": "8fb5e579b1f5155b9b6c50bb6abc0ddb09a5a640011334646f783c475ce93b56",
+  "environment": {
+    "python": "3.12.7",
+    "os": "Windows",
+    "machine": "AMD64",
+    "cpu_logical": 8,
+    "packages": {
+      "numpy": "2.5.3",
+      "torch": "2.14.0+cpu",
+      "sentence-transformers": "5.7.0",
+      "transformers": "5.17.0",
+      "rank-bm25": "0.2.2",
+      "httpx": "0.28.1",
+      "pytest": "9.1.1"
+    }
+  },
+  "snapshots": {
+    "opencv/opencv": {
+      "file": "opencv--opencv.snapshot.json",
+      "file_hash": "9732ed8c8587777cbfa56dd5a0c3c5b9791b5e43e0c9d9a1358befd8b72b8976",
+      "started_at": "2026-10-01T02:32:50.817953+00:00",
+      "finished_at": "2026-10-01T02:33:07.194641+00:00",
+      "fetched_count": 2000,
+      "issue_count": 387,
+      "bug_count": 232,
+      "partial": true,
+      "pages": [
+        {
+          "path": "/repos/opencv/opencv/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": 100
+          },
+          "items": 100,
+          "non_pr_issues": 10,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoMM_iKDPAAAAAUlRJoQ%3D&page=2"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoMM_iKDPAAAAAUlRJoQ=",
+            "page": "2"
+          },
+          "items": 100,
+          "non_pr_issues": 13,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoIavM0DPAAAAAUHvATU%3D&page=3"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoIavM0DPAAAAAUHvATU=",
+            "page": "3"
+          },
+          "items": 100,
+          "non_pr_issues": 22,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoD9l9pDPAAAAATmLMfU%3D&page=4"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoD9l9pDPAAAAATmLMfU=",
+            "page": "4"
+          },
+          "items": 100,
+          "non_pr_issues": 21,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn_puYnDPAAAAATJbhRw%3D&page=5"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn_puYnDPAAAAATJbhRw=",
+            "page": "5"
+          },
+          "items": 100,
+          "non_pr_issues": 20,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn54AgQjPAAAAASjXNcQ%3D&page=6"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn54AgQjPAAAAASjXNcQ=",
+            "page": "6"
+          },
+          "items": 100,
+          "non_pr_issues": 24,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn1lXP7DPAAAAASJEpOw%3D&page=7"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn1lXP7DPAAAAASJEpOw=",
+            "page": "7"
+          },
+          "items": 100,
+          "non_pr_issues": 16,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABnw7jJPjPAAAAARvhmdI%3D&page=8"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABnw7jJPjPAAAAARvhmdI=",
+            "page": "8"
+          },
+          "items": 100,
+          "non_pr_issues": 16,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABnsn5_EDPAAAAARXqAzI%3D&page=9"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABnsn5_EDPAAAAARXqAzI=",
+            "page": "9"
+          },
+          "items": 100,
+          "non_pr_issues": 22,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABnn4sWIDPAAAAAQ-obwA%3D&page=10"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABnn4sWIDPAAAAAQ-obwA=",
+            "page": "10"
+          },
+          "items": 100,
+          "non_pr_issues": 9,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABnkxnHpjPAAAAAQwZuK4%3D&page=11"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABnkxnHpjPAAAAAQwZuK4=",
+            "page": "11"
+          },
+          "items": 100,
+          "non_pr_issues": 15,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABng3b0_jPAAAAAQcOIks%3D&page=12"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABng3b0_jPAAAAAQcOIks=",
+            "page": "12"
+          },
+          "items": 100,
+          "non_pr_issues": 25,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABnb4pwkjPAAAAAQGNJwM%3D&page=13"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABnb4pwkjPAAAAAQGNJwM=",
+            "page": "13"
+          },
+          "items": 100,
+          "non_pr_issues": 20,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABnU1MQ-jO-ejShQ%3D%3D&page=14"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABnU1MQ-jO-ejShQ==",
+            "page": "14"
+          },
+          "items": 100,
+          "non_pr_issues": 25,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABnNDpsLDO8QAg2A%3D%3D&page=15"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABnNDpsLDO8QAg2A==",
+            "page": "15"
+          },
+          "items": 100,
+          "non_pr_issues": 30,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABnExjmpDO6gFtXA%3D%3D&page=16"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABnExjmpDO6gFtXA==",
+            "page": "16"
+          },
+          "items": 100,
+          "non_pr_issues": 24,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABm9C9AHDO5BXkWA%3D%3D&page=17"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABm9C9AHDO5BXkWA==",
+            "page": "17"
+          },
+          "items": 100,
+          "non_pr_issues": 21,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABm18XohjO4GNlGg%3D%3D&page=18"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABm18XohjO4GNlGg==",
+            "page": "18"
+          },
+          "items": 100,
+          "non_pr_issues": 19,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABmzA7xLDO3wZIaw%3D%3D&page=19"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABmzA7xLDO3wZIaw==",
+            "page": "19"
+          },
+          "items": 100,
+          "non_pr_issues": 17,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABmuNy4KDO2-SoZA%3D%3D&page=20"
+        },
+        {
+          "path": "/repositories/5108051/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABmuNy4KDO2-SoZA==",
+            "page": "20"
+          },
+          "items": 100,
+          "non_pr_issues": 18,
+          "next": "https://api.github.com/repositories/5108051/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABmon5yYDO2FV0Mg%3D%3D&page=21"
+        }
+      ],
+      "oldest_created": "2025-11-16T15:11:28Z",
+      "newest_created": "2026-09-30T09:31:24Z",
+      "empty_body": 0,
+      "empty_title": 0,
+      "attachment_links": 29,
+      "attachment_note": "Link presence only; inability to understand without attachment is unreviewed."
+    },
+    "huggingface/transformers": {
+      "file": "huggingface--transformers.snapshot.json",
+      "file_hash": "c1cc1e3a391318643deffb9c27021d130e89616e7c2d55bd2e7eec5273778a46",
+      "started_at": "2026-10-01T02:33:07.203287+00:00",
+      "finished_at": "2026-10-01T02:33:21.300537+00:00",
+      "fetched_count": 2000,
+      "issue_count": 390,
+      "bug_count": 114,
+      "partial": true,
+      "pages": [
+        {
+          "path": "/repos/huggingface/transformers/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": 100
+          },
+          "items": 100,
+          "non_pr_issues": 22,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoNmuNaDPAAAAAUz5pRg%3D&page=2"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoNmuNaDPAAAAAUz5pRg=",
+            "page": "2"
+          },
+          "items": 100,
+          "non_pr_issues": 15,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoMkKAFjPAAAAAUosS8s%3D&page=3"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoMkKAFjPAAAAAUosS8s=",
+            "page": "3"
+          },
+          "items": 100,
+          "non_pr_issues": 17,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoLFty_DPAAAAAUdsILo%3D&page=4"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoLFty_DPAAAAAUdsILo=",
+            "page": "4"
+          },
+          "items": 100,
+          "non_pr_issues": 21,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoKHsGcDPAAAAAUUlDeg%3D&page=5"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoKHsGcDPAAAAAUUlDeg=",
+            "page": "5"
+          },
+          "items": 100,
+          "non_pr_issues": 18,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoI8UwGjPAAAAAUMdvFM%3D&page=6"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoI8UwGjPAAAAAUMdvFM=",
+            "page": "6"
+          },
+          "items": 100,
+          "non_pr_issues": 27,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoH4BCEDPAAAAAUCl3NU%3D&page=7"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoH4BCEDPAAAAAUCl3NU=",
+            "page": "7"
+          },
+          "items": 100,
+          "non_pr_issues": 18,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoGZO9jDPAAAAAT3ungQ%3D&page=8"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoGZO9jDPAAAAAT3ungQ=",
+            "page": "8"
+          },
+          "items": 100,
+          "non_pr_issues": 15,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoEoO5AjPAAAAATrVCd8%3D&page=9"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoEoO5AjPAAAAATrVCd8=",
+            "page": "9"
+          },
+          "items": 100,
+          "non_pr_issues": 25,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoDmUbkDPAAAAATjKMwc%3D&page=10"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoDmUbkDPAAAAATjKMwc=",
+            "page": "10"
+          },
+          "items": 100,
+          "non_pr_issues": 20,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoCU9uEjPAAAAATbqszc%3D&page=11"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoCU9uEjPAAAAATbqszc=",
+            "page": "11"
+          },
+          "items": 100,
+          "non_pr_issues": 16,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoBl2dgjPAAAAATVuTVA%3D&page=12"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoBl2dgjPAAAAATVuTVA=",
+            "page": "12"
+          },
+          "items": 100,
+          "non_pr_issues": 21,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABoAD8bJDPAAAAATMramo%3D&page=13"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABoAD8bJDPAAAAATMramo=",
+            "page": "13"
+          },
+          "items": 100,
+          "non_pr_issues": 23,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn-tOOQDPAAAAATCKCwg%3D&page=14"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn-tOOQDPAAAAATCKCwg=",
+            "page": "14"
+          },
+          "items": 100,
+          "non_pr_issues": 14,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn81KIBjPAAAAAS22q8k%3D&page=15"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn81KIBjPAAAAAS22q8k=",
+            "page": "15"
+          },
+          "items": 100,
+          "non_pr_issues": 21,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn7dDCqDPAAAAASuumlI%3D&page=16"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn7dDCqDPAAAAASuumlI=",
+            "page": "16"
+          },
+          "items": 100,
+          "non_pr_issues": 14,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn6I2jYDPAAAAASkgKzE%3D&page=17"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn6I2jYDPAAAAASkgKzE=",
+            "page": "17"
+          },
+          "items": 100,
+          "non_pr_issues": 26,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn4d138jPAAAAASa3jHE%3D&page=18"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn4d138jPAAAAASa3jHE=",
+            "page": "18"
+          },
+          "items": 100,
+          "non_pr_issues": 25,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn2pKGcjPAAAAASQanYc%3D&page=19"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn2pKGcjPAAAAASQanYc=",
+            "page": "19"
+          },
+          "items": 100,
+          "non_pr_issues": 19,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn1PSh3DPAAAAASH3jnQ%3D&page=20"
+        },
+        {
+          "path": "/repositories/155220641/issues",
+          "params": {
+            "state": "all",
+            "sort": "created",
+            "direction": "desc",
+            "per_page": "100",
+            "after": "Y3Vyc29yOnYyOpLPAAABn1PSh3DPAAAAASH3jnQ=",
+            "page": "20"
+          },
+          "items": 100,
+          "non_pr_issues": 13,
+          "next": "https://api.github.com/repositories/155220641/issues?state=all&sort=created&direction=desc&per_page=100&after=Y3Vyc29yOnYyOpLPAAABn0C-a2jPAAAAASA4NP0%3D&page=21"
+        }
+      ],
+      "oldest_created": "2026-07-08T08:59:48Z",
+      "newest_created": "2026-09-30T22:13:51Z",
+      "empty_body": 0,
+      "empty_title": 0,
+      "attachment_links": 3,
+      "attachment_note": "Link presence only; inability to understand without attachment is unreviewed."
+    }
+  },
+  "historical_probes": [
+    {
+      "repository": "opencv/opencv",
+      "number": 17687,
+      "title": "Camera is very slow to open when using the MSMF VideoCapture backend",
+      "url": "https://github.com/opencv/opencv/issues/17687",
+      "cohort": "historical_probe",
+      "previously_exposed": true,
+      "source_hash": "30a8267c4f02b746a3a48c68ac5f9ca519f3f03db624d751c3c52a4d97771df9"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 24694,
+      "title": "Make correct padding for text generation with GPT-NEO",
+      "url": "https://github.com/huggingface/transformers/issues/24694",
+      "cohort": "historical_probe",
+      "previously_exposed": true,
+      "source_hash": "20382cca4599ab5f720e91b8b8030c9a349d7e6625d7c90cb8c7d7ce8bdf5601"
+    }
+  ],
+  "cases_hash": "b5a4c86487d29c5b8bda52236722ab8070adfead5a6ca5282df952a28766edd4",
+  "queries_hash": "df6a7f37fca250074543c5eeceff6edd089e31963dd0b79a5253a15801da1fa5",
+  "cases_frozen_at": "2026-10-01T02:51:15.340705+00:00",
+  "core_cases": 12,
+  "total_queries": 38,
+  "snapshot_availability": "Raw snapshots are gitignored. Exact replay requires the original local run directory; fresh collection may differ."
+}

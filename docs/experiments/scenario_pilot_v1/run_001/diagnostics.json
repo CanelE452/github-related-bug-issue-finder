@@ -1,0 +1,10 @@
+{
+  "E0": "reference coverage/ranks available; relevance UNJUDGED without qrels",
+  "E1": "AWAITING_HUMAN_REVIEW: information-equivalence drafts prepared; not run",
+  "E2": "PENDING_HUMAN_CONDITION_PAIR_VALIDATION",
+  "E3": "AWAITING_HUMAN_REVIEW: no certified no-answer corpus",
+  "E4": "Top-5 max chunk spans recorded; symptom/environment classification unreviewed",
+  "E5": "54 warm repetitions run; cold samples tracked separately",
+  "external_web_study": "PENDING_MANUAL_STUDY",
+  "summary_evaluation": "NOT_APPLICABLE_YET: summary not implemented"
+}

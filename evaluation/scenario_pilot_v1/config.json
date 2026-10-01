@@ -1,0 +1,20 @@
+{
+  "protocol_version": "scenario_pilot_v1",
+  "seed": 20261001,
+  "repositories": ["opencv/opencv", "huggingface/transformers"],
+  "source_mode": "fresh",
+  "max_pages": 20,
+  "max_http_calls": 100,
+  "max_compute_seconds": 5400,
+  "model": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "chunk_size": 448,
+  "chunk_overlap": 64,
+  "bug_labels": ["bug"],
+  "methods": ["bm25", "semantic", "hybrid"],
+  "scopes": ["C_raw", "C_bug"],
+  "sample_documents": 20,
+  "historical_probes": [["opencv/opencv",17687], ["huggingface/transformers",24694]],
+  "query_origin": "reconstructed_from_issue",
+  "human_review_required": true
+}

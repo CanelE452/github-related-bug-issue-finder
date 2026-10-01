@@ -1,0 +1,26 @@
+{
+  "repositories": {
+    "opencv/opencv": {
+      "empty_body": 0,
+      "empty_title": 0,
+      "attachment_links": 29,
+      "attachment_note": "Link presence only; inability to understand without attachment is unreviewed.",
+      "oldest_created": "2025-11-16T15:11:28Z",
+      "newest_created": "2026-09-30T09:31:24Z",
+      "partial": true
+    },
+    "huggingface/transformers": {
+      "empty_body": 0,
+      "empty_title": 0,
+      "attachment_links": 3,
+      "attachment_note": "Link presence only; inability to understand without attachment is unreviewed.",
+      "oldest_created": "2026-07-08T08:59:48Z",
+      "newest_created": "2026-09-30T22:13:51Z",
+      "partial": true
+    }
+  },
+  "attachment_required_for_understanding": "UNREVIEWED: only link presence was counted; attachment media not opened or executed.",
+  "deleted_or_moved_issue_count": null,
+  "deleted_or_moved_note": "Not measurable from a partial live issue listing; absent records are not counted as zero. Historical endpoints returned actual documents.",
+  "source_only_queries": "reconstructed_from_issue; no live user task success or source bug reproduction claimed"
+}

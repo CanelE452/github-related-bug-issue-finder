@@ -1,0 +1,448 @@
+{
+  "seed": 20261001,
+  "candidate_count": 49,
+  "deviation": "후보 상한 48보다 1개 많은 49개를 검토함. corpus 확대 없이 고정 시드 순서의 다음 Transformers 후보 1개를 오류 사례로 추가. 순위 실행 이전 결정. 유형 분류는 사람 검토 전이며 T-E2/T-S1 중복 유형 가능성 있음.",
+  "candidates": [
+    {
+      "repository": "opencv/opencv",
+      "number": 29565,
+      "candidate_order": 0,
+      "selected": true,
+      "case_id": "O-S1",
+      "reason": "핵심 예외 문구 없이 Python API 속성이 없다고 관찰함. 이전 버전 성공은 관찰되지 않음.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 28606,
+      "candidate_order": 1,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 28671,
+      "candidate_order": 2,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 28207,
+      "candidate_order": 3,
+      "selected": true,
+      "case_id": "O-C1",
+      "reason": "FFmpeg 직접 실행과 Java VideoCapture 실행의 하드웨어 디코더 차이가 보고됨.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29590,
+      "candidate_order": 4,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29636,
+      "candidate_order": 5,
+      "selected": true,
+      "case_id": "O-C2",
+      "reason": "동일 파라미터에서도 보드 생성 경로에 따라 코너 검출 결과가 다름. 첨부 이미지는 읽지 않음.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29258,
+      "candidate_order": 6,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29652,
+      "candidate_order": 7,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29419,
+      "candidate_order": 8,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 30090,
+      "candidate_order": 9,
+      "selected": true,
+      "case_id": "O-S2",
+      "reason": "웹 문서 누락 관찰이며 복사할 예외 없음. 코드 버그인지 문서 문제인지 관련성 판정 필요.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29984,
+      "candidate_order": 10,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 28062,
+      "candidate_order": 11,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 28910,
+      "candidate_order": 12,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 28834,
+      "candidate_order": 13,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 30077,
+      "candidate_order": 14,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29015,
+      "candidate_order": 15,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 28440,
+      "candidate_order": 16,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 28777,
+      "candidate_order": 17,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29350,
+      "candidate_order": 18,
+      "selected": true,
+      "case_id": "O-E1",
+      "reason": "빌드 중 실제 선언 누락 오류. 별도 성공 설정의 비교가 아닌 컴파일 예외 중심.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 28525,
+      "candidate_order": 19,
+      "selected": true,
+      "case_id": "O-E2",
+      "reason": "import 시 실제 공유 라이브러리 오류가 핵심 단서. OS는 보고된 배경이며 성공 조건 비교 없음.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29570,
+      "candidate_order": 20,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29615,
+      "candidate_order": 21,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29774,
+      "candidate_order": 22,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "opencv/opencv",
+      "number": 29212,
+      "candidate_order": 23,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48506,
+      "candidate_order": 0,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48369,
+      "candidate_order": 1,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48501,
+      "candidate_order": 2,
+      "selected": true,
+      "case_id": "T-C1",
+      "reason": "static cache와 chunked prefill의 조합 및 layer별 head_dim이 핵심 조건. 원인/수정은 제외.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48968,
+      "candidate_order": 3,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 47475,
+      "candidate_order": 4,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48315,
+      "candidate_order": 5,
+      "selected": true,
+      "case_id": "T-C2",
+      "reason": "이동한 체크포인트·없는 best 경로·새 best 부재·save_total_limit=1 조합이 중요.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48548,
+      "candidate_order": 6,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48724,
+      "candidate_order": 7,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 47752,
+      "candidate_order": 8,
+      "selected": true,
+      "case_id": "T-S1",
+      "reason": "설정 값 불일치가 증상. 예외 traceback 없이 assert 재현만 있음; 실행 조건 겹침은 검토 필요.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 47801,
+      "candidate_order": 9,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 47705,
+      "candidate_order": 10,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 47225,
+      "candidate_order": 11,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 47942,
+      "candidate_order": 12,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 47889,
+      "candidate_order": 13,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48068,
+      "candidate_order": 14,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48017,
+      "candidate_order": 15,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 49122,
+      "candidate_order": 16,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48622,
+      "candidate_order": 17,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 49094,
+      "candidate_order": 18,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48346,
+      "candidate_order": 19,
+      "selected": true,
+      "case_id": "T-E2",
+      "reason": "실제 NoneType 예외가 주요 검색 단서. override 부재는 입력 상황이며 유형 중복 여부는 사람 검토 필요.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 47689,
+      "candidate_order": 20,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48403,
+      "candidate_order": 21,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 48826,
+      "candidate_order": 22,
+      "selected": true,
+      "case_id": "T-S2",
+      "reason": "indexer 학습 불가가 보고됨. 원인으로 지목된 연산과 해결 제안은 질의에 넣지 않음.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 49108,
+      "candidate_order": 23,
+      "selected": false,
+      "case_id": null,
+      "reason": "비선정: 유형별 정원 또는 기능 요청/질문/통합 triage/원인 분석 중심 글. 원문 메타데이터에 따른 작성자 선별이며 사람 검토 전.",
+      "screening_phase": "before_any_ranking"
+    },
+    {
+      "repository": "huggingface/transformers",
+      "number": 47879,
+      "candidate_order": 24,
+      "selected": true,
+      "case_id": "T-E1",
+      "reason": "영상 처리 중 보고된 tuple AttributeError. 수정 제안은 질의에서 제외.",
+      "screening_phase": "before_any_ranking"
+    }
+  ]
+}

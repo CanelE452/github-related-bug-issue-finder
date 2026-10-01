@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "opencv/opencv",
+    "documents": 387,
+    "seconds": 438.8732339000271
+  },
+  {
+    "repository": "huggingface/transformers",
+    "documents": 390,
+    "seconds": 698.5536204000236
+  }
+]

@@ -1,0 +1,7 @@
+﻿repository,method,status,elapsed_ms,process_wall_ms,note
+opencv/opencv,bm25,ok,13.899700017645955,1384.934899979271,"One sample; fresh process, OS file cache uncontrolled; no corpus re-embedding."
+opencv/opencv,semantic,ok,312.1612000395544,25062.646999955177,"One sample; fresh process, OS file cache uncontrolled; no corpus re-embedding."
+opencv/opencv,hybrid,ok,332.0905000437051,20704.883500002325,"One sample; fresh process, OS file cache uncontrolled; no corpus re-embedding."
+huggingface/transformers,bm25,ok,13.637199997901917,1594.8284000041895,"One sample; fresh process, OS file cache uncontrolled; no corpus re-embedding."
+huggingface/transformers,semantic,ok,329.6054999809712,20132.367999991402,"One sample; fresh process, OS file cache uncontrolled; no corpus re-embedding."
+huggingface/transformers,hybrid,ok,378.5877000191249,20220.685100008268,"One sample; fresh process, OS file cache uncontrolled; no corpus re-embedding."

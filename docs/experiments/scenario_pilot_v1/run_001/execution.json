@@ -1,0 +1,13 @@
+{
+  "completed_at": "2026-10-01T03:14:46.992437+00:00",
+  "compute_seconds": 1406.2541887999978,
+  "logical_searches": 228,
+  "timing_repeats": 54,
+  "encode_calls": 718,
+  "query_count": 38,
+  "query_status": "unreviewed",
+  "cold_timing_status": "COMPLETED",
+  "methods_order": "seeded shuffle; warm timing includes fresh query encoding; shared model/index in one process",
+  "cold_samples": 6,
+  "compute_with_cold_seconds": 1495.3545356999384
+}

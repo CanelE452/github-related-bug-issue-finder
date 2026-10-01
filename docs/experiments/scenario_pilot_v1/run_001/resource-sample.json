@@ -1,0 +1,151 @@
+{
+  "model_loading_seconds": 88.41906580000068,
+  "sample": [
+    {
+      "doc_id": "huggingface/transformers#47885",
+      "tokens": 968,
+      "chunks": 3,
+      "seconds": 2.1246344999817666,
+      "rss_bytes": 1238880256
+    },
+    {
+      "doc_id": "huggingface/transformers#48807",
+      "tokens": 2609,
+      "chunks": 7,
+      "seconds": 3.9015964999853168,
+      "rss_bytes": 1311186944
+    },
+    {
+      "doc_id": "huggingface/transformers#47404",
+      "tokens": 910,
+      "chunks": 3,
+      "seconds": 1.7578991000191309,
+      "rss_bytes": 1268023296
+    },
+    {
+      "doc_id": "huggingface/transformers#47641",
+      "tokens": 931,
+      "chunks": 3,
+      "seconds": 1.975664500001585,
+      "rss_bytes": 1276579840
+    },
+    {
+      "doc_id": "opencv/opencv#29837",
+      "tokens": 1390,
+      "chunks": 4,
+      "seconds": 2.409813200007193,
+      "rss_bytes": 1269051392
+    },
+    {
+      "doc_id": "huggingface/transformers#48293",
+      "tokens": 191,
+      "chunks": 1,
+      "seconds": 0.3757286999898497,
+      "rss_bytes": 1250824192
+    },
+    {
+      "doc_id": "opencv/opencv#29052",
+      "tokens": 615,
+      "chunks": 2,
+      "seconds": 2.109160299994983,
+      "rss_bytes": 1261330432
+    },
+    {
+      "doc_id": "opencv/opencv#28546",
+      "tokens": 950,
+      "chunks": 3,
+      "seconds": 2.7105370000062976,
+      "rss_bytes": 1268367360
+    },
+    {
+      "doc_id": "huggingface/transformers#48039",
+      "tokens": 3666,
+      "chunks": 10,
+      "seconds": 10.1881551000115,
+      "rss_bytes": 1254879232
+    },
+    {
+      "doc_id": "opencv/opencv#29001",
+      "tokens": 830,
+      "chunks": 2,
+      "seconds": 1.674031600006856,
+      "rss_bytes": 1260478464
+    },
+    {
+      "doc_id": "huggingface/transformers#48351",
+      "tokens": 283,
+      "chunks": 1,
+      "seconds": 0.8487809000071138,
+      "rss_bytes": 1252618240
+    },
+    {
+      "doc_id": "opencv/opencv#28561",
+      "tokens": 338,
+      "chunks": 1,
+      "seconds": 1.2822574000165332,
+      "rss_bytes": 1253875712
+    },
+    {
+      "doc_id": "huggingface/transformers#49175",
+      "tokens": 8375,
+      "chunks": 22,
+      "seconds": 20.512722199986456,
+      "rss_bytes": 1312468992
+    },
+    {
+      "doc_id": "huggingface/transformers#47994",
+      "tokens": 663,
+      "chunks": 2,
+      "seconds": 2.0206540999934077,
+      "rss_bytes": 1311416320
+    },
+    {
+      "doc_id": "huggingface/transformers#48384",
+      "tokens": 2472,
+      "chunks": 7,
+      "seconds": 5.804526599997189,
+      "rss_bytes": 1296445440
+    },
+    {
+      "doc_id": "huggingface/transformers#48172",
+      "tokens": 1060,
+      "chunks": 3,
+      "seconds": 2.7801444999931846,
+      "rss_bytes": 1297231872
+    },
+    {
+      "doc_id": "opencv/opencv#29573",
+      "tokens": 1083,
+      "chunks": 3,
+      "seconds": 3.0299961999990046,
+      "rss_bytes": 1297235968
+    },
+    {
+      "doc_id": "huggingface/transformers#48315",
+      "tokens": 1352,
+      "chunks": 4,
+      "seconds": 4.005925400007982,
+      "rss_bytes": 1259241472
+    },
+    {
+      "doc_id": "opencv/opencv#30027",
+      "tokens": 1664,
+      "chunks": 5,
+      "seconds": 4.943110499996692,
+      "rss_bytes": 1283039232
+    },
+    {
+      "doc_id": "huggingface/transformers#48661",
+      "tokens": 1072,
+      "chunks": 3,
+      "seconds": 3.0106068000022788,
+      "rss_bytes": 1273786368
+    }
+  ],
+  "rss_before_bytes": 1227444224,
+  "rss_after_bytes": 1282023424,
+  "all_documents": 777,
+  "all_chunks": 3242,
+  "estimated_index_seconds": 2821.8493709462246,
+  "estimate_note": "20-document sample; linear chunk estimate, not a guarantee. Query cost excluded."
+}

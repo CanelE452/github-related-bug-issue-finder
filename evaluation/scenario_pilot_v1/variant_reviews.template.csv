@@ -1,0 +1,9 @@
+﻿query_id,query_sha256,information_equivalent,irrelevant_append_only,reviewer_type,reviewer_id,reviewed_at,review_status,reason
+O-S1:E1_paraphrase,afe0339405521e33a5ff2a85a5774b6cedefbcd3ad912ba2b0440a0032937c21,,,,,,unreviewed,
+O-S1:E1_irrelevant_append,f782f2f013a7513950410c702ca43964fbd5e66a5b3a405919db1bcc91a04bcb,,,,,,unreviewed,
+O-C1:E1_paraphrase,417925963672e29d3f6ecf965584e24aaf52bf5ca19a4713f1c9aac2f021eac5,,,,,,unreviewed,
+O-C1:E1_irrelevant_append,9115457dee1f7e1a3661da719d1d681d77b7810eba5060b31d34212b32c1e1f0,,,,,,unreviewed,
+T-S1:E1_paraphrase,a1d9bbbc980496d7eac14fbfa296f22f5ca784b9b00bfe9cbb245d670f9d85cd,,,,,,unreviewed,
+T-S1:E1_irrelevant_append,d9badf344eb0ef70a10b05fef7a3aaf3638d54e601a55318f95b15fb5093ef7f,,,,,,unreviewed,
+T-C1:E1_paraphrase,0b943e81b9f0b35c500d9fa4a4dd2103431cc67545b977deefb0de4276d8474c,,,,,,unreviewed,
+T-C1:E1_irrelevant_append,b4f9256a358d67f25c6614442a1fde1f0f4836f769a4fac6d24a63f853994c48,,,,,,unreviewed,
