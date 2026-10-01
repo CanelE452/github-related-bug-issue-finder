@@ -1,0 +1,5 @@
+﻿query_id,scope,doc_id,bm25_rank,semantic_rank,in_lexical_window,in_semantic_window,lexical_rrf_term,semantic_rrf_term,fused_score,fused_rank,quality_status,is_reference
+O-E1:A_ko_symptom,C_raw,opencv/opencv#29350,103,2,False,True,0.0,0.016129032258064516,0.016129032258064516,20,UNJUDGED,True
+O-E1:A_ko_symptom,C_bug,opencv/opencv#29350,73,2,False,True,0.0,0.016129032258064516,0.016129032258064516,25,UNJUDGED,True
+T-E1:A_ko_symptom,C_raw,huggingface/transformers#47879,,1,False,True,0.0,0.01639344262295082,0.01639344262295082,1,UNJUDGED,True
+T-E1:A_ko_symptom,C_bug,huggingface/transformers#47879,,1,False,True,0.0,0.01639344262295082,0.01639344262295082,1,UNJUDGED,True

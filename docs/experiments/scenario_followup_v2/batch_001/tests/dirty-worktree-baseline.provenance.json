@@ -1,0 +1,8 @@
+{
+  "source_sha256": "73b443d1cfe0b5b2908a490e072e5f09ea1cf4a9fb3bac9d6dc311c3caf29719",
+  "public_sha256": "1b57e8b34d78dba0e9c3b4e66d2f620c6dd441fb627b1f69d10dad69be46e98d",
+  "masked": true,
+  "command": "python -m pytest -q",
+  "exit_code": 0,
+  "note": "Original local dirty worktree baseline; unrelated edits included, not publication tree validation."
+}

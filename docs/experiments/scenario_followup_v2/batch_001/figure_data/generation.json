@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-10-01T06:22:51.989321+00:00",
+  "pool_version": "7eb48ab75a68688a12748a65c2f6860228428b1175e7fe316b5bfc3e9d65e1a6",
+  "qrels_version": "3d32cd2ea5d156046c3863ade23183c25877a9e6f329d4f3009e99bcfd5d71ae",
+  "figures": [
+    {
+      "image": "images/review-progress.png",
+      "data": "figure_data/review-progress.csv",
+      "source_sha256": "e8a9d98c9586995b6498ab93525f5889f3a0ae55f2dffb84b9da72e5b078d496",
+      "rows_used": 2,
+      "generator": "evaluation/followup_report.py",
+      "generator_sha256": "4c2fa23072398f485284b0dd4fbc230044dc1021a4de894d68307ee337df9ce2",
+      "command": "python -m evaluation.scenario_followup report --batch data/scenario_followup_v2/batch_001"
+    },
+    {
+      "image": "images/source-coverage.png",
+      "data": "figure_data/source-coverage.csv",
+      "source_sha256": "3a8c9e97edb42053e55b28fca8f42f3e9a0e642d6094fb7ef6459b7d8669621e",
+      "rows_used": 2,
+      "generator": "evaluation/followup_report.py",
+      "generator_sha256": "4c2fa23072398f485284b0dd4fbc230044dc1021a4de894d68307ee337df9ce2",
+      "command": "python -m evaluation.scenario_followup report --batch data/scenario_followup_v2/batch_001"
+    },
+    {
+      "image": "images/token-diagnostic.png",
+      "data": "figure_data/token-diagnostic.csv",
+      "source_sha256": "554ed56fbe776237b94d7f05b830e77a9177166f681060edf5482907acc3b446",
+      "rows_used": 40,
+      "generator": "evaluation/followup_report.py",
+      "generator_sha256": "4c2fa23072398f485284b0dd4fbc230044dc1021a4de894d68307ee337df9ce2",
+      "command": "python -m evaluation.scenario_followup report --batch data/scenario_followup_v2/batch_001"
+    },
+    {
+      "image": "images/rrf-contributions.png",
+      "data": "figure_data/rrf-contributions.csv",
+      "source_sha256": "f8d930098d2821e8518eae0d758a0eaedf68af92bc34f4700edb5c0156a8f3b5",
+      "rows_used": 4,
+      "generator": "evaluation/followup_report.py",
+      "generator_sha256": "4c2fa23072398f485284b0dd4fbc230044dc1021a4de894d68307ee337df9ce2",
+      "command": "python -m evaluation.scenario_followup report --batch data/scenario_followup_v2/batch_001"
+    }
+  ]
+}

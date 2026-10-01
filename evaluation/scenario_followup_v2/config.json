@@ -1,0 +1,20 @@
+{
+  "version": "scenario_followup_v2",
+  "review_schema_version": 2,
+  "seed": 20261001,
+  "parent_report_commit": "7ec06cac66c84eaea70495b2bb17ce693f3b679b",
+  "parent_run_id": "scenario_pilot_v1/run_001",
+  "max_http_calls": 50,
+  "max_compute_seconds": 5400,
+  "max_logical_conditions": 444,
+  "limits": {"reproduce": 12, "full_rank": 72, "K1": 144, "R1": 72, "E1": 48, "E2": 24, "E3": 12, "paired_timing": 60},
+  "score_absolute_tolerance": 0.000001,
+  "rank_order_must_match": true,
+  "K1_rule": "query_ascii_boundary_v1",
+  "R1_rule": "rrf_full_window_probe",
+  "rrf_constant": 60,
+  "query_selection": "first core case per repository in frozen case order, A_ko_symptom",
+  "human_required_for_changes": true,
+  "publication_branch": "main",
+  "branch_override": "User explicitly requested main only; no new branch or automatic merge."
+}

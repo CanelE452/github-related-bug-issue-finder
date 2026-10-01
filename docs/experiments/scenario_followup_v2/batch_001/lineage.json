@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-10-01T05:37:42.766254+00:00",
+  "parent_run_id": "scenario_pilot_v1/run_001",
+  "parent_report_commit": "7ec06cac66c84eaea70495b2bb17ce693f3b679b",
+  "parent_run": "data/scenario_pilot_v1/run_001",
+  "parent_manifest_sha256": "3a9fd33584c67484c7b450ef3ff2ff46a2ab1fa54780df4a221e84b6a23d89a5",
+  "parent_rankings_file": "data/scenario_pilot_v1/run_001/runs.jsonl",
+  "parent_rankings_sha256": "d7aa347c270128b095036ed025dcf17ad34099c73813a54b131cf13ec3f26ec0",
+  "representation": "local_frozen_snapshots",
+  "queries_hash": "df6a7f37fca250074543c5eeceff6edd089e31963dd0b79a5253a15801da1fa5",
+  "cases_hash": "b5a4c86487d29c5b8bda52236722ab8070adfead5a6ca5282df952a28766edd4",
+  "parent_retrieval_code_hashes": {
+    "backend/app/search.py": "b1d07d4eb4562057776e7e9f2bafcd41bea321c5a1c259dad5ac09257b82d0d8",
+    "backend/app/domain.py": "1f0943382b580827ff11de2c71230e76bbca2855c8b768e5a064fd07b9bceb3c",
+    "backend/app/github.py": "ff109a41e894f65b1761c1b5d8521d5720f9001f5bf109527ea8c98dcb76b388",
+    "backend/app/semantic.py": "e5b7fd30daeaf7b8e84c9813a8570724b0c26bd2b660e84b080ef9025fd528bb",
+    "backend/app/config.py": "92de1c3111898abed1e170ac5d2ca5447c9898ca82ab43b71ea1b96dcf70270d",
+    "backend/app/storage.py": "091cca15142b2668c79cef2b026ec2b4f2dc6683dab002651b269da649c5f524",
+    "evaluation/scenario_eval.py": "8dcdb0fdf0cc03d5e71dd1231d141601ddd78845bf02dacc7f68e083649b6589",
+    "evaluation/scenario_report.py": "c4b6b56b71a3ea0a14d45e5ab3caf00b42326011716d29973464993c2846dfb9"
+  },
+  "retrieval_code_matches": {
+    "backend/app/search.py": true,
+    "backend/app/domain.py": true,
+    "backend/app/github.py": true,
+    "backend/app/semantic.py": true,
+    "backend/app/config.py": true,
+    "backend/app/storage.py": true,
+    "evaluation/scenario_eval.py": true
+  },
+  "parent_model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "corpus_hashes": {
+    "opencv/opencv|C_raw": "d196969497930c67ac27d5c7cfd7da853424d25108a972beb46701ece5b13834",
+    "opencv/opencv|C_bug": "d4b3381db5eb92fddd33cc43d7b5db4514d42560636b74cdbc6c7eab314d5ef9",
+    "huggingface/transformers|C_raw": "9f1daeada493910cdd7f9e742512db3bff88b8530e94a66bae78b228aca5f3f9",
+    "huggingface/transformers|C_bug": "f7aaeb2fade781ca6dddc0ea54076e423f08d69d300e0947d02e45af0c0a4a33"
+  },
+  "selected_doc_ids_hashes": {
+    "opencv/opencv|C_raw": "e45b47501b130d6ba285eefed592fcd5d48e5dbf506f81ea3ec50ef298dfd763",
+    "opencv/opencv|C_bug": "78ab5786d8c6e62d044431fbb631999bedef5dc26e81a72c9cbab43e7eeab564",
+    "huggingface/transformers|C_raw": "bb35559e04c36e7a6b817ffdc433d1c206a1a4c7ac3a1a885826bbedf7937170",
+    "huggingface/transformers|C_bug": "7fc0f0b11811f6da016c050845989b186dd9ff89e766b3c5920f4141adc91a56"
+  },
+  "used_file_byte_hashes": {
+    "manifest.json": "3a9fd33584c67484c7b450ef3ff2ff46a2ab1fa54780df4a221e84b6a23d89a5",
+    "queries.jsonl": "e2f6de3657078c3c97a9d10da828e8f2a4bca4b2ca6550c398c75dea57c4d01f",
+    "cases.jsonl": "62fcfb7db9677c4535152b8671ea5ee514ececcd6e80f54089bd931d93151eee",
+    "runs.jsonl": "d7aa347c270128b095036ed025dcf17ad34099c73813a54b131cf13ec3f26ec0",
+    "review_items.jsonl": "ae9300cc1ce8e147a0a667887388f6425f410937fb633409ba55b3004e5eea61",
+    "human_reviews.csv": "4840b359c8a84a3467ffab46b8bdb93f13f49cd1d45217a218151400b8815f46",
+    "query_reviews.csv": "86eebcd232826ea0aead12c904b657976bc2bd10998d3fbd264b40ff71676fcc",
+    "opencv--opencv.snapshot.json": "9732ed8c8587777cbfa56dd5a0c3c5b9791b5e43e0c9d9a1358befd8b72b8976",
+    "huggingface--transformers.snapshot.json": "c1cc1e3a391318643deffb9c27021d130e89616e7c2d55bd2e7eec5273778a46"
+  },
+  "preserved_parent_files": 813,
+  "config_hash": "11917545479e39355077b0f0b2b23ad027497d9ea5721bb4a7b6a59d4a141aa0",
+  "review_schema_version": 2,
+  "environment": {
+    "python": "3.12.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "cpu",
+    "threads": 4
+  },
+  "input_integrity": "VERIFIED",
+  "exact_retrieval_version": "VERIFIED",
+  "round_id": "round_d164928160bce593",
+  "input_hashes": {
+    "reviews": "85e16785d67033d3da57d655bae4f90f26c0164959091fa58b890b47a093b447",
+    "query_reviews": "53c0373a62d0568c2c23ea84f57e2ba2393bf567f6cd0818e85f05744b2b9ee5"
+  },
+  "pool_version": "7eb48ab75a68688a12748a65c2f6860228428b1175e7fe316b5bfc3e9d65e1a6",
+  "qrels_version": "3d32cd2ea5d156046c3863ade23183c25877a9e6f329d4f3009e99bcfd5d71ae",
+  "scorer_version": "scenario_followup_v2",
+  "scorer_code_hashes": {
+    "evaluation/scenario_followup.py": "1169f86a66b47b11ea6a248ea2c5f705a2b1bfa2e9911ff2b3bce008bd681b63",
+    "evaluation/followup_scoring.py": "d4bcb351ce8173961c1339a827870f52e419f8e20eadb25ea8af9250e258eeba",
+    "evaluation/followup_review.py": "a5b1785c87e59f06da3956fb7d855788f668d6b40bc0a9f6e6c8907d2e4a14b2"
+  },
+  "reporter_code_hashes": {
+    "evaluation/followup_report.py": "4c2fa23072398f485284b0dd4fbc230044dc1021a4de894d68307ee337df9ce2"
+  },
+  "scoring_config_hash": "11917545479e39355077b0f0b2b23ad027497d9ea5721bb4a7b6a59d4a141aa0",
+  "review_html_code_hashes": {
+    "review.css": "108c0ed724b62ee085ff8230c30e1e43570bf4f4413269990b8730bba622820f",
+    "review.js": "8b3422ee0f628d11479a5049dc5b7e9b8feac0a2cff91b6c4d8c3c84db96bcd2"
+  },
+  "parent_not_modified": true
+}

@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-01T06:21:36.871785+00:00",
+  "browser": "Chrome",
+  "records": [
+    {
+      "name": "query_reviews.completed.csv",
+      "rows": 38,
+      "sha256": "53c0373a62d0568c2c23ea84f57e2ba2393bf567f6cd0818e85f05744b2b9ee5",
+      "actual_download_confirmed": true,
+      "human_rows": 0
+    },
+    {
+      "name": "human_reviews.completed.csv",
+      "rows": 429,
+      "sha256": "85e16785d67033d3da57d655bae4f90f26c0164959091fa58b890b47a093b447",
+      "actual_download_confirmed": true,
+      "human_rows": 0
+    }
+  ],
+  "not_actual_review": true,
+  "review_script_sha256": "8b3422ee0f628d11479a5049dc5b7e9b8feac0a2cff91b6c4d8c3c84db96bcd2",
+  "iab_download_note": "Full review CSV native save was not observed in the in-app browser. Chrome exports were read as actual files."
+}

@@ -123,3 +123,8 @@ npm.cmd --prefix frontend run dev
 - `docs`: 구조·평가·검증 기록
 
 공개 서비스용 인증, 사용자별 저장소 격리, 작업 큐 서버, 자동 주기 동기화, 배포는 이번 로컬 MVP의 범위에 포함하지 않습니다.
+
+## 후속 평가
+
+- [기존 상황 질의 파일럿 v1](docs/experiments/scenario_pilot_v1/run_001/report.md)
+- [사람 검토·후속 실험 v2](docs/experiments/scenario_followup_v2/batch_001/README.md): 검토 HTML, 실제 진단, 판정 대기 보고·원자료·PNG.

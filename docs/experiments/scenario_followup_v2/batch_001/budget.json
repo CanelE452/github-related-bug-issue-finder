@@ -1,0 +1,13 @@
+{
+  "logical_conditions": 12,
+  "phase_counts": {
+    "reproduce": 12
+  },
+  "compute_seconds": 94.13001429999713,
+  "query_encode_calls": 2,
+  "document_reembedding_calls": 0,
+  "cache_hit_documents": 1123,
+  "http_calls": 0,
+  "training_calls": 0,
+  "paid_api_calls": 0
+}

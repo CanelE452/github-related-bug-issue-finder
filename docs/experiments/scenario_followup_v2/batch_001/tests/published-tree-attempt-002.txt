@@ -1,0 +1,93 @@
+.....................F......F........................................... [ 90%]
+........                                                                 [100%]
+================================== FAILURES ===================================
+___________________ test_semantic_cache_revision_and_prefix ___________________
+
+tmp_path = WindowsPath('[LOCAL_PATH]
+sample_snapshot = {'repository': 'example/library', 'collected_at': '2026-01-02T00:00:00Z', 'fetched_count': 4, 'issue_count': 4, ...}
+
+    def test_semantic_cache_revision_and_prefix(tmp_path, sample_snapshot):
+        settings = Settings(data_dir=tmp_path)
+        store = Store(tmp_path)
+        snapshot = store.save(sample_snapshot)
+        semantic = SemanticSearch(settings)
+        semantic.model, semantic.revision = Model(), 'test-immutable-sha'
+        bugs = [x for x in snapshot['issues'] if is_bug(x, ['bug'])]
+>       semantic.prepare(snapshot, bugs)
+
+backend\tests\test_core.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+backend\app\semantic.py:113: in prepare
+    temporary.write_text(json.dumps(manifest), encoding='utf-8')
+[LOCAL_PATH] in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('[LOCAL_PATH]
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '[LOCAL_PATH]
+
+[LOCAL_PATH] FileNotFoundError
+____________ test_immutable_scope_id_and_semantic_cache_isolation _____________
+
+tmp_path = WindowsPath('[LOCAL_PATH]
+
+    def test_immutable_scope_id_and_semantic_cache_isolation(tmp_path):
+        original=fixture_snapshot();before=deepcopy(original)
+        original['issues'].append(issue(4,pull_request={}))
+        raw=ev.corpus(original,'C_raw',['bug']);bug=ev.corpus(original,'C_bug',['bug'])
+        assert len(raw['issues'])==3 and len(bug['issues'])==2
+        assert original['issues'][:3]==before['issues']
+        assert ev.doc_id('a/repo',1)!=ev.doc_id('b/repo',1)
+        semantic=SemanticSearch(Settings(data_dir=tmp_path,model_revision='fixture'))
+        semantic.model=Model();semantic.revision='fixture'
+>       semantic.prepare(raw,raw['issues']);semantic.prepare(bug,bug['issues'])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend\tests\test_scenario_eval.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+backend\app\semantic.py:113: in prepare
+    temporary.write_text(json.dumps(manifest), encoding='utf-8')
+[LOCAL_PATH] in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('[LOCAL_PATH]
+mode = 'w', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '[LOCAL_PATH]
+
+[LOCAL_PATH] FileNotFoundError
+============================== warnings summary ===============================
+..\..\..\..\..\.venv\Lib\site-packages\fastapi\testclient.py:1
+  [LOCAL_PATH] StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED backend/tests/test_core.py::test_semantic_cache_revision_and_prefix - ...
+FAILED backend/tests/test_scenario_eval.py::test_immutable_scope_id_and_semantic_cache_isolation
+2 failed, 78 passed, 1 warning in 4.48s

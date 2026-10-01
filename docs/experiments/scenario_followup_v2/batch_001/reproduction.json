@@ -1,0 +1,1128 @@
+{
+  "status": "REPRODUCED",
+  "conditions": 12,
+  "checks": [
+    {
+      "query_id": "O-E1:A_ko_symptom",
+      "scope": "C_raw",
+      "method": "bm25",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "opencv/opencv#30095",
+          "score": 0.13248294064139454
+        },
+        {
+          "rank": 2,
+          "doc_id": "opencv/opencv#29342",
+          "score": 0.13196416528337754
+        },
+        {
+          "rank": 3,
+          "doc_id": "opencv/opencv#29761",
+          "score": 0.13161866581327533
+        },
+        {
+          "rank": 4,
+          "doc_id": "opencv/opencv#29265",
+          "score": 0.13094508757753395
+        },
+        {
+          "rank": 5,
+          "doc_id": "opencv/opencv#28784",
+          "score": 0.13084614757626534
+        },
+        {
+          "rank": 6,
+          "doc_id": "opencv/opencv#29452",
+          "score": 0.13051067931057997
+        },
+        {
+          "rank": 7,
+          "doc_id": "opencv/opencv#29763",
+          "score": 0.13038670158983037
+        },
+        {
+          "rank": 8,
+          "doc_id": "opencv/opencv#28241",
+          "score": 0.13034886818607067
+        },
+        {
+          "rank": 9,
+          "doc_id": "opencv/opencv#29510",
+          "score": 0.13014464340318
+        },
+        {
+          "rank": 10,
+          "doc_id": "opencv/opencv#29035",
+          "score": 0.12958619417126976
+        },
+        {
+          "rank": 11,
+          "doc_id": "opencv/opencv#29292",
+          "score": 0.1290350718986426
+        },
+        {
+          "rank": 12,
+          "doc_id": "opencv/opencv#28952",
+          "score": 0.12886300035872825
+        },
+        {
+          "rank": 13,
+          "doc_id": "opencv/opencv#29072",
+          "score": 0.12853280863635352
+        },
+        {
+          "rank": 14,
+          "doc_id": "opencv/opencv#29705",
+          "score": 0.12834425356755266
+        },
+        {
+          "rank": 15,
+          "doc_id": "opencv/opencv#29798",
+          "score": 0.12826277647767031
+        },
+        {
+          "rank": 16,
+          "doc_id": "opencv/opencv#30019",
+          "score": 0.12796241410188378
+        },
+        {
+          "rank": 17,
+          "doc_id": "opencv/opencv#29308",
+          "score": 0.1277356865906399
+        },
+        {
+          "rank": 18,
+          "doc_id": "opencv/opencv#29028",
+          "score": 0.1277159025574814
+        },
+        {
+          "rank": 19,
+          "doc_id": "opencv/opencv#29694",
+          "score": 0.1277144577245922
+        },
+        {
+          "rank": 20,
+          "doc_id": "opencv/opencv#28382",
+          "score": 0.1276765857121234
+        }
+      ]
+    },
+    {
+      "query_id": "O-E1:A_ko_symptom",
+      "scope": "C_raw",
+      "method": "semantic",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "opencv/opencv#29278",
+          "score": 0.8850013017654419
+        },
+        {
+          "rank": 2,
+          "doc_id": "opencv/opencv#29350",
+          "score": 0.8845992088317871
+        },
+        {
+          "rank": 3,
+          "doc_id": "opencv/opencv#29325",
+          "score": 0.8834883570671082
+        },
+        {
+          "rank": 4,
+          "doc_id": "opencv/opencv#28254",
+          "score": 0.8823108673095703
+        },
+        {
+          "rank": 5,
+          "doc_id": "opencv/opencv#29761",
+          "score": 0.8815025687217712
+        },
+        {
+          "rank": 6,
+          "doc_id": "opencv/opencv#28580",
+          "score": 0.8778650760650635
+        },
+        {
+          "rank": 7,
+          "doc_id": "opencv/opencv#28608",
+          "score": 0.8778460025787354
+        },
+        {
+          "rank": 8,
+          "doc_id": "opencv/opencv#29763",
+          "score": 0.8760783672332764
+        },
+        {
+          "rank": 9,
+          "doc_id": "opencv/opencv#28952",
+          "score": 0.8758054971694946
+        },
+        {
+          "rank": 10,
+          "doc_id": "opencv/opencv#29615",
+          "score": 0.8750224113464355
+        },
+        {
+          "rank": 11,
+          "doc_id": "opencv/opencv#29778",
+          "score": 0.8734902739524841
+        },
+        {
+          "rank": 12,
+          "doc_id": "opencv/opencv#29613",
+          "score": 0.8724117875099182
+        },
+        {
+          "rank": 13,
+          "doc_id": "opencv/opencv#28382",
+          "score": 0.8720548152923584
+        },
+        {
+          "rank": 14,
+          "doc_id": "opencv/opencv#28241",
+          "score": 0.8716112375259399
+        },
+        {
+          "rank": 15,
+          "doc_id": "opencv/opencv#29308",
+          "score": 0.8710947036743164
+        },
+        {
+          "rank": 16,
+          "doc_id": "opencv/opencv#28597",
+          "score": 0.8710451722145081
+        },
+        {
+          "rank": 17,
+          "doc_id": "opencv/opencv#28657",
+          "score": 0.8709952235221863
+        },
+        {
+          "rank": 18,
+          "doc_id": "opencv/opencv#28187",
+          "score": 0.8705830574035645
+        },
+        {
+          "rank": 19,
+          "doc_id": "opencv/opencv#28233",
+          "score": 0.8703449964523315
+        },
+        {
+          "rank": 20,
+          "doc_id": "opencv/opencv#28598",
+          "score": 0.8701817989349365
+        }
+      ]
+    },
+    {
+      "query_id": "O-E1:A_ko_symptom",
+      "scope": "C_raw",
+      "method": "hybrid",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "opencv/opencv#29761",
+          "score": 0.03125763125763126
+        },
+        {
+          "rank": 2,
+          "doc_id": "opencv/opencv#29763",
+          "score": 0.029631255487269532
+        },
+        {
+          "rank": 3,
+          "doc_id": "opencv/opencv#28952",
+          "score": 0.028381642512077296
+        },
+        {
+          "rank": 4,
+          "doc_id": "opencv/opencv#28241",
+          "score": 0.02821939586645469
+        },
+        {
+          "rank": 5,
+          "doc_id": "opencv/opencv#29325",
+          "score": 0.02821869488536155
+        },
+        {
+          "rank": 6,
+          "doc_id": "opencv/opencv#28784",
+          "score": 0.026373626373626377
+        },
+        {
+          "rank": 7,
+          "doc_id": "opencv/opencv#29308",
+          "score": 0.02632034632034632
+        },
+        {
+          "rank": 8,
+          "doc_id": "opencv/opencv#28382",
+          "score": 0.0261986301369863
+        },
+        {
+          "rank": 9,
+          "doc_id": "opencv/opencv#29265",
+          "score": 0.026151315789473682
+        },
+        {
+          "rank": 10,
+          "doc_id": "opencv/opencv#30095",
+          "score": 0.025739237015474183
+        },
+        {
+          "rank": 11,
+          "doc_id": "opencv/opencv#28580",
+          "score": 0.024585477415666093
+        },
+        {
+          "rank": 12,
+          "doc_id": "opencv/opencv#29452",
+          "score": 0.02441077441077441
+        },
+        {
+          "rank": 13,
+          "doc_id": "opencv/opencv#28597",
+          "score": 0.023467173087357567
+        },
+        {
+          "rank": 14,
+          "doc_id": "opencv/opencv#28251",
+          "score": 0.02259959141981614
+        },
+        {
+          "rank": 15,
+          "doc_id": "opencv/opencv#29376",
+          "score": 0.021431828545371637
+        },
+        {
+          "rank": 16,
+          "doc_id": "opencv/opencv#29422",
+          "score": 0.020326864147088865
+        },
+        {
+          "rank": 17,
+          "doc_id": "opencv/opencv#29564",
+          "score": 0.01896117900790798
+        },
+        {
+          "rank": 18,
+          "doc_id": "opencv/opencv#29278",
+          "score": 0.01639344262295082
+        },
+        {
+          "rank": 19,
+          "doc_id": "opencv/opencv#29342",
+          "score": 0.016129032258064516
+        },
+        {
+          "rank": 20,
+          "doc_id": "opencv/opencv#29350",
+          "score": 0.016129032258064516
+        }
+      ]
+    },
+    {
+      "query_id": "O-E1:A_ko_symptom",
+      "scope": "C_bug",
+      "method": "bm25",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "opencv/opencv#30095",
+          "score": 0.005258703898817876
+        },
+        {
+          "rank": 2,
+          "doc_id": "opencv/opencv#29342",
+          "score": 0.005246544640162812
+        },
+        {
+          "rank": 3,
+          "doc_id": "opencv/opencv#29761",
+          "score": 0.005236740665393747
+        },
+        {
+          "rank": 4,
+          "doc_id": "opencv/opencv#29265",
+          "score": 0.005216947828734746
+        },
+        {
+          "rank": 5,
+          "doc_id": "opencv/opencv#28784",
+          "score": 0.00521399939272695
+        },
+        {
+          "rank": 6,
+          "doc_id": "opencv/opencv#29452",
+          "score": 0.0052004276817770685
+        },
+        {
+          "rank": 7,
+          "doc_id": "opencv/opencv#29763",
+          "score": 0.005197089090404377
+        },
+        {
+          "rank": 8,
+          "doc_id": "opencv/opencv#28241",
+          "score": 0.0051927996619028916
+        },
+        {
+          "rank": 9,
+          "doc_id": "opencv/opencv#29510",
+          "score": 0.005174956370021387
+        },
+        {
+          "rank": 10,
+          "doc_id": "opencv/opencv#29035",
+          "score": 0.005173616576643376
+        },
+        {
+          "rank": 11,
+          "doc_id": "opencv/opencv#28952",
+          "score": 0.005141054648680458
+        },
+        {
+          "rank": 12,
+          "doc_id": "opencv/opencv#29292",
+          "score": 0.005135257678263597
+        },
+        {
+          "rank": 13,
+          "doc_id": "opencv/opencv#29072",
+          "score": 0.005130399450665319
+        },
+        {
+          "rank": 14,
+          "doc_id": "opencv/opencv#30019",
+          "score": 0.005112740510637596
+        },
+        {
+          "rank": 15,
+          "doc_id": "opencv/opencv#28382",
+          "score": 0.005109918869954465
+        },
+        {
+          "rank": 16,
+          "doc_id": "opencv/opencv#29694",
+          "score": 0.005102695915295803
+        },
+        {
+          "rank": 17,
+          "doc_id": "opencv/opencv#29028",
+          "score": 0.00509959427461144
+        },
+        {
+          "rank": 18,
+          "doc_id": "opencv/opencv#29325",
+          "score": 0.005097051102289141
+        },
+        {
+          "rank": 19,
+          "doc_id": "opencv/opencv#29308",
+          "score": 0.005090659907654824
+        },
+        {
+          "rank": 20,
+          "doc_id": "opencv/opencv#28911",
+          "score": 0.005088604042398249
+        }
+      ]
+    },
+    {
+      "query_id": "O-E1:A_ko_symptom",
+      "scope": "C_bug",
+      "method": "semantic",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "opencv/opencv#29278",
+          "score": 0.8850013017654419
+        },
+        {
+          "rank": 2,
+          "doc_id": "opencv/opencv#29350",
+          "score": 0.8845992088317871
+        },
+        {
+          "rank": 3,
+          "doc_id": "opencv/opencv#29325",
+          "score": 0.8834883570671082
+        },
+        {
+          "rank": 4,
+          "doc_id": "opencv/opencv#28254",
+          "score": 0.8823108673095703
+        },
+        {
+          "rank": 5,
+          "doc_id": "opencv/opencv#29761",
+          "score": 0.8815025687217712
+        },
+        {
+          "rank": 6,
+          "doc_id": "opencv/opencv#28580",
+          "score": 0.8778650760650635
+        },
+        {
+          "rank": 7,
+          "doc_id": "opencv/opencv#28608",
+          "score": 0.8778460025787354
+        },
+        {
+          "rank": 8,
+          "doc_id": "opencv/opencv#29763",
+          "score": 0.8760783672332764
+        },
+        {
+          "rank": 9,
+          "doc_id": "opencv/opencv#28952",
+          "score": 0.8758054971694946
+        },
+        {
+          "rank": 10,
+          "doc_id": "opencv/opencv#29615",
+          "score": 0.8750224113464355
+        },
+        {
+          "rank": 11,
+          "doc_id": "opencv/opencv#29613",
+          "score": 0.8724117875099182
+        },
+        {
+          "rank": 12,
+          "doc_id": "opencv/opencv#28382",
+          "score": 0.8720548152923584
+        },
+        {
+          "rank": 13,
+          "doc_id": "opencv/opencv#28241",
+          "score": 0.8716112375259399
+        },
+        {
+          "rank": 14,
+          "doc_id": "opencv/opencv#29308",
+          "score": 0.8710947036743164
+        },
+        {
+          "rank": 15,
+          "doc_id": "opencv/opencv#28657",
+          "score": 0.8709952235221863
+        },
+        {
+          "rank": 16,
+          "doc_id": "opencv/opencv#28187",
+          "score": 0.8705830574035645
+        },
+        {
+          "rank": 17,
+          "doc_id": "opencv/opencv#28233",
+          "score": 0.8703449964523315
+        },
+        {
+          "rank": 18,
+          "doc_id": "opencv/opencv#28598",
+          "score": 0.8701817989349365
+        },
+        {
+          "rank": 19,
+          "doc_id": "opencv/opencv#29562",
+          "score": 0.8700069189071655
+        },
+        {
+          "rank": 20,
+          "doc_id": "opencv/opencv#29614",
+          "score": 0.8695452213287354
+        }
+      ]
+    },
+    {
+      "query_id": "O-E1:A_ko_symptom",
+      "scope": "C_bug",
+      "method": "hybrid",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "opencv/opencv#29761",
+          "score": 0.03125763125763126
+        },
+        {
+          "rank": 2,
+          "doc_id": "opencv/opencv#29763",
+          "score": 0.029631255487269532
+        },
+        {
+          "rank": 3,
+          "doc_id": "opencv/opencv#29325",
+          "score": 0.028693528693528692
+        },
+        {
+          "rank": 4,
+          "doc_id": "opencv/opencv#28952",
+          "score": 0.028577260665441927
+        },
+        {
+          "rank": 5,
+          "doc_id": "opencv/opencv#28241",
+          "score": 0.028404512489927477
+        },
+        {
+          "rank": 6,
+          "doc_id": "opencv/opencv#28382",
+          "score": 0.027222222222222224
+        },
+        {
+          "rank": 7,
+          "doc_id": "opencv/opencv#28784",
+          "score": 0.02701252236135957
+        },
+        {
+          "rank": 8,
+          "doc_id": "opencv/opencv#29265",
+          "score": 0.026860955056179775
+        },
+        {
+          "rank": 9,
+          "doc_id": "opencv/opencv#30095",
+          "score": 0.02649445272396092
+        },
+        {
+          "rank": 10,
+          "doc_id": "opencv/opencv#29308",
+          "score": 0.026171741361614778
+        },
+        {
+          "rank": 11,
+          "doc_id": "opencv/opencv#28580",
+          "score": 0.025568181818181816
+        },
+        {
+          "rank": 12,
+          "doc_id": "opencv/opencv#29452",
+          "score": 0.025151515151515154
+        },
+        {
+          "rank": 13,
+          "doc_id": "opencv/opencv#29072",
+          "score": 0.02340736800106397
+        },
+        {
+          "rank": 14,
+          "doc_id": "opencv/opencv#28251",
+          "score": 0.023392612859097127
+        },
+        {
+          "rank": 15,
+          "doc_id": "opencv/opencv#28657",
+          "score": 0.02285714285714286
+        },
+        {
+          "rank": 16,
+          "doc_id": "opencv/opencv#29376",
+          "score": 0.022774327122153208
+        },
+        {
+          "rank": 17,
+          "doc_id": "opencv/opencv#28598",
+          "score": 0.02252925068459049
+        },
+        {
+          "rank": 18,
+          "doc_id": "opencv/opencv#29694",
+          "score": 0.022248803827751195
+        },
+        {
+          "rank": 19,
+          "doc_id": "opencv/opencv#29422",
+          "score": 0.021708683473389355
+        },
+        {
+          "rank": 20,
+          "doc_id": "opencv/opencv#28487",
+          "score": 0.021691473404869044
+        }
+      ]
+    },
+    {
+      "query_id": "T-E1:A_ko_symptom",
+      "scope": "C_raw",
+      "method": "bm25",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": []
+    },
+    {
+      "query_id": "T-E1:A_ko_symptom",
+      "scope": "C_raw",
+      "method": "semantic",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "huggingface/transformers#47879",
+          "score": 0.8518399596214294
+        },
+        {
+          "rank": 2,
+          "doc_id": "huggingface/transformers#48501",
+          "score": 0.8498913645744324
+        },
+        {
+          "rank": 3,
+          "doc_id": "huggingface/transformers#48703",
+          "score": 0.848715603351593
+        },
+        {
+          "rank": 4,
+          "doc_id": "huggingface/transformers#47309",
+          "score": 0.8481863737106323
+        },
+        {
+          "rank": 5,
+          "doc_id": "huggingface/transformers#48736",
+          "score": 0.8472126126289368
+        },
+        {
+          "rank": 6,
+          "doc_id": "huggingface/transformers#48422",
+          "score": 0.8450334072113037
+        },
+        {
+          "rank": 7,
+          "doc_id": "huggingface/transformers#49175",
+          "score": 0.8444619178771973
+        },
+        {
+          "rank": 8,
+          "doc_id": "huggingface/transformers#47265",
+          "score": 0.8435425758361816
+        },
+        {
+          "rank": 9,
+          "doc_id": "huggingface/transformers#48914",
+          "score": 0.8434913754463196
+        },
+        {
+          "rank": 10,
+          "doc_id": "huggingface/transformers#47279",
+          "score": 0.8434896469116211
+        },
+        {
+          "rank": 11,
+          "doc_id": "huggingface/transformers#49074",
+          "score": 0.8427881002426147
+        },
+        {
+          "rank": 12,
+          "doc_id": "huggingface/transformers#49051",
+          "score": 0.8425763845443726
+        },
+        {
+          "rank": 13,
+          "doc_id": "huggingface/transformers#47377",
+          "score": 0.8424227237701416
+        },
+        {
+          "rank": 14,
+          "doc_id": "huggingface/transformers#47981",
+          "score": 0.8419063091278076
+        },
+        {
+          "rank": 15,
+          "doc_id": "huggingface/transformers#47442",
+          "score": 0.8414663672447205
+        },
+        {
+          "rank": 16,
+          "doc_id": "huggingface/transformers#47490",
+          "score": 0.8410158753395081
+        },
+        {
+          "rank": 17,
+          "doc_id": "huggingface/transformers#48263",
+          "score": 0.8408841490745544
+        },
+        {
+          "rank": 18,
+          "doc_id": "huggingface/transformers#48240",
+          "score": 0.8408396244049072
+        },
+        {
+          "rank": 19,
+          "doc_id": "huggingface/transformers#49000",
+          "score": 0.8402955532073975
+        },
+        {
+          "rank": 20,
+          "doc_id": "huggingface/transformers#48807",
+          "score": 0.839946985244751
+        }
+      ]
+    },
+    {
+      "query_id": "T-E1:A_ko_symptom",
+      "scope": "C_raw",
+      "method": "hybrid",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "huggingface/transformers#47879",
+          "score": 0.01639344262295082
+        },
+        {
+          "rank": 2,
+          "doc_id": "huggingface/transformers#48501",
+          "score": 0.016129032258064516
+        },
+        {
+          "rank": 3,
+          "doc_id": "huggingface/transformers#48703",
+          "score": 0.015873015873015872
+        },
+        {
+          "rank": 4,
+          "doc_id": "huggingface/transformers#47309",
+          "score": 0.015625
+        },
+        {
+          "rank": 5,
+          "doc_id": "huggingface/transformers#48736",
+          "score": 0.015384615384615385
+        },
+        {
+          "rank": 6,
+          "doc_id": "huggingface/transformers#48422",
+          "score": 0.015151515151515152
+        },
+        {
+          "rank": 7,
+          "doc_id": "huggingface/transformers#49175",
+          "score": 0.014925373134328358
+        },
+        {
+          "rank": 8,
+          "doc_id": "huggingface/transformers#47265",
+          "score": 0.014705882352941176
+        },
+        {
+          "rank": 9,
+          "doc_id": "huggingface/transformers#48914",
+          "score": 0.014492753623188406
+        },
+        {
+          "rank": 10,
+          "doc_id": "huggingface/transformers#47279",
+          "score": 0.014285714285714285
+        },
+        {
+          "rank": 11,
+          "doc_id": "huggingface/transformers#49074",
+          "score": 0.014084507042253521
+        },
+        {
+          "rank": 12,
+          "doc_id": "huggingface/transformers#49051",
+          "score": 0.013888888888888888
+        },
+        {
+          "rank": 13,
+          "doc_id": "huggingface/transformers#47377",
+          "score": 0.0136986301369863
+        },
+        {
+          "rank": 14,
+          "doc_id": "huggingface/transformers#47981",
+          "score": 0.013513513513513514
+        },
+        {
+          "rank": 15,
+          "doc_id": "huggingface/transformers#47442",
+          "score": 0.013333333333333334
+        },
+        {
+          "rank": 16,
+          "doc_id": "huggingface/transformers#47490",
+          "score": 0.013157894736842105
+        },
+        {
+          "rank": 17,
+          "doc_id": "huggingface/transformers#48263",
+          "score": 0.012987012987012988
+        },
+        {
+          "rank": 18,
+          "doc_id": "huggingface/transformers#48240",
+          "score": 0.01282051282051282
+        },
+        {
+          "rank": 19,
+          "doc_id": "huggingface/transformers#49000",
+          "score": 0.012658227848101266
+        },
+        {
+          "rank": 20,
+          "doc_id": "huggingface/transformers#48807",
+          "score": 0.0125
+        }
+      ]
+    },
+    {
+      "query_id": "T-E1:A_ko_symptom",
+      "scope": "C_bug",
+      "method": "bm25",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": []
+    },
+    {
+      "query_id": "T-E1:A_ko_symptom",
+      "scope": "C_bug",
+      "method": "semantic",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "huggingface/transformers#47879",
+          "score": 0.8518399596214294
+        },
+        {
+          "rank": 2,
+          "doc_id": "huggingface/transformers#48501",
+          "score": 0.8498913645744324
+        },
+        {
+          "rank": 3,
+          "doc_id": "huggingface/transformers#48703",
+          "score": 0.848715603351593
+        },
+        {
+          "rank": 4,
+          "doc_id": "huggingface/transformers#49051",
+          "score": 0.8425763845443726
+        },
+        {
+          "rank": 5,
+          "doc_id": "huggingface/transformers#49113",
+          "score": 0.8391369581222534
+        },
+        {
+          "rank": 6,
+          "doc_id": "huggingface/transformers#47448",
+          "score": 0.8360258340835571
+        },
+        {
+          "rank": 7,
+          "doc_id": "huggingface/transformers#48862",
+          "score": 0.8342968225479126
+        },
+        {
+          "rank": 8,
+          "doc_id": "huggingface/transformers#47721",
+          "score": 0.833593487739563
+        },
+        {
+          "rank": 9,
+          "doc_id": "huggingface/transformers#47530",
+          "score": 0.8324813842773438
+        },
+        {
+          "rank": 10,
+          "doc_id": "huggingface/transformers#48491",
+          "score": 0.8294094204902649
+        },
+        {
+          "rank": 11,
+          "doc_id": "huggingface/transformers#48887",
+          "score": 0.8278685212135315
+        },
+        {
+          "rank": 12,
+          "doc_id": "huggingface/transformers#48400",
+          "score": 0.8264078497886658
+        },
+        {
+          "rank": 13,
+          "doc_id": "huggingface/transformers#48966",
+          "score": 0.8261408805847168
+        },
+        {
+          "rank": 14,
+          "doc_id": "huggingface/transformers#49007",
+          "score": 0.8255150318145752
+        },
+        {
+          "rank": 15,
+          "doc_id": "huggingface/transformers#49195",
+          "score": 0.822942852973938
+        },
+        {
+          "rank": 16,
+          "doc_id": "huggingface/transformers#48312",
+          "score": 0.8228127956390381
+        },
+        {
+          "rank": 17,
+          "doc_id": "huggingface/transformers#47228",
+          "score": 0.8219677209854126
+        },
+        {
+          "rank": 18,
+          "doc_id": "huggingface/transformers#48886",
+          "score": 0.8217309713363647
+        },
+        {
+          "rank": 19,
+          "doc_id": "huggingface/transformers#47651",
+          "score": 0.8205274343490601
+        },
+        {
+          "rank": 20,
+          "doc_id": "huggingface/transformers#47917",
+          "score": 0.820340096950531
+        }
+      ]
+    },
+    {
+      "query_id": "T-E1:A_ko_symptom",
+      "scope": "C_bug",
+      "method": "hybrid",
+      "rank_order_equal": true,
+      "max_score_absolute_delta": 0.0,
+      "passed": true,
+      "actual_top20": [
+        {
+          "rank": 1,
+          "doc_id": "huggingface/transformers#47879",
+          "score": 0.01639344262295082
+        },
+        {
+          "rank": 2,
+          "doc_id": "huggingface/transformers#48501",
+          "score": 0.016129032258064516
+        },
+        {
+          "rank": 3,
+          "doc_id": "huggingface/transformers#48703",
+          "score": 0.015873015873015872
+        },
+        {
+          "rank": 4,
+          "doc_id": "huggingface/transformers#49051",
+          "score": 0.015625
+        },
+        {
+          "rank": 5,
+          "doc_id": "huggingface/transformers#49113",
+          "score": 0.015384615384615385
+        },
+        {
+          "rank": 6,
+          "doc_id": "huggingface/transformers#47448",
+          "score": 0.015151515151515152
+        },
+        {
+          "rank": 7,
+          "doc_id": "huggingface/transformers#48862",
+          "score": 0.014925373134328358
+        },
+        {
+          "rank": 8,
+          "doc_id": "huggingface/transformers#47721",
+          "score": 0.014705882352941176
+        },
+        {
+          "rank": 9,
+          "doc_id": "huggingface/transformers#47530",
+          "score": 0.014492753623188406
+        },
+        {
+          "rank": 10,
+          "doc_id": "huggingface/transformers#48491",
+          "score": 0.014285714285714285
+        },
+        {
+          "rank": 11,
+          "doc_id": "huggingface/transformers#48887",
+          "score": 0.014084507042253521
+        },
+        {
+          "rank": 12,
+          "doc_id": "huggingface/transformers#48400",
+          "score": 0.013888888888888888
+        },
+        {
+          "rank": 13,
+          "doc_id": "huggingface/transformers#48966",
+          "score": 0.0136986301369863
+        },
+        {
+          "rank": 14,
+          "doc_id": "huggingface/transformers#49007",
+          "score": 0.013513513513513514
+        },
+        {
+          "rank": 15,
+          "doc_id": "huggingface/transformers#49195",
+          "score": 0.013333333333333334
+        },
+        {
+          "rank": 16,
+          "doc_id": "huggingface/transformers#48312",
+          "score": 0.013157894736842105
+        },
+        {
+          "rank": 17,
+          "doc_id": "huggingface/transformers#47228",
+          "score": 0.012987012987012988
+        },
+        {
+          "rank": 18,
+          "doc_id": "huggingface/transformers#48886",
+          "score": 0.01282051282051282
+        },
+        {
+          "rank": 19,
+          "doc_id": "huggingface/transformers#47651",
+          "score": 0.012658227848101266
+        },
+        {
+          "rank": 20,
+          "doc_id": "huggingface/transformers#47917",
+          "score": 0.0125
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-10-01T05:50:02.620280+00:00",
+  "tolerance": 1e-06,
+  "query_encode_calls": 2,
+  "document_reembedding_calls": 0
+}

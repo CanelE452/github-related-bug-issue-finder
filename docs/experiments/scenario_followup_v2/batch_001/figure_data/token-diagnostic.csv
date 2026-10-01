@@ -1,0 +1,41 @@
+﻿query_id,scope,candidate_tokens,tokens_in_corpus,in_reference_count
+O-E1:A_ko_symptom,C_raw,cmake mingw,cmake mingw,2
+O-E1:A_ko_symptom,C_bug,cmake mingw,cmake mingw,2
+O-E1:B_ko_context,C_raw,cmake mingw32-make make,cmake make mingw32-make,3
+O-E1:B_ko_context,C_bug,cmake mingw32-make make,cmake make mingw32-make,3
+O-E2:A_ko_symptom,C_raw,actions opencv python,actions opencv python,3
+O-E2:A_ko_symptom,C_bug,actions opencv python,actions opencv python,3
+O-E2:B_ko_context,C_raw,actions opencv_contrib_python_rolling rolling ld_library_path path,actions ld_library_path opencv_contrib_python_rolling path rolling,5
+O-E2:B_ko_context,C_bug,actions opencv_contrib_python_rolling rolling ld_library_path path,actions ld_library_path opencv_contrib_python_rolling path rolling,5
+O-S1:A_ko_symptom,C_raw,opencv,opencv,1
+O-S1:A_ko_symptom,C_bug,opencv,opencv,1
+O-S1:B_ko_context,C_raw,cv2 hasattr false,cv2 false hasattr,3
+O-S1:B_ko_context,C_bug,cv2 hasattr false,cv2 false hasattr,3
+O-S2:B_ko_context,C_raw,docs.opencv.org org,docs.opencv.org org,2
+O-S2:B_ko_context,C_bug,docs.opencv.org org,org,2
+O-C1:A_ko_symptom,C_raw,java,java,1
+O-C1:A_ko_symptom,C_bug,java,java,1
+O-C1:B_ko_context,C_raw,h264_cuvid cuvid videocapture cap_ffmpeg video_acceleration_any any opencv_ffmpeg_capture_options options,any cap_ffmpeg cuvid h264_cuvid opencv_ffmpeg_capture_options options videocapture,6
+O-C1:B_ko_context,C_bug,h264_cuvid cuvid videocapture cap_ffmpeg video_acceleration_any any opencv_ffmpeg_capture_options options,any cap_ffmpeg cuvid h264_cuvid opencv_ffmpeg_capture_options options videocapture,6
+O-C2:B_ko_context,C_raw,calib.io io charucodetector.detectboard detectboard,calib.io detectboard io,3
+O-C2:B_ko_context,C_bug,calib.io io charucodetector.detectboard detectboard,calib.io detectboard io,3
+T-E1:A_ko_symptom,C_raw,gemma4,gemma4,1
+T-E1:A_ko_symptom,C_bug,gemma4,gemma4,1
+T-E1:B_ko_context,C_raw,gemma4-e2b-it it forward,forward gemma4-e2b-it it,3
+T-E1:B_ko_context,C_bug,gemma4-e2b-it it forward,forward gemma4-e2b-it it,3
+T-E2:B_ko_context,C_raw,finegrainedfp8config update_tp_plan plan base_model_tp_plan _experts_implementation implementation,_experts_implementation base_model_tp_plan finegrainedfp8config implementation plan update_tp_plan,5
+T-E2:B_ko_context,C_bug,finegrainedfp8config update_tp_plan plan base_model_tp_plan _experts_implementation implementation,implementation,5
+T-S1:B_ko_context,C_raw,generation_config max_new_tokens tokens false pipeline generation_config.max_new_tokens,false generation_config max_new_tokens pipeline tokens,4
+T-S1:B_ko_context,C_bug,generation_config max_new_tokens tokens false pipeline generation_config.max_new_tokens,false generation_config max_new_tokens pipeline tokens,4
+T-S2:A_ko_symptom,C_raw,qwen,qwen,0
+T-S2:A_ko_symptom,C_bug,qwen,qwen,0
+T-S2:B_ko_context,C_raw,qwen3.8-flash-next next loss,loss next qwen3.8-flash-next,3
+T-S2:B_ko_context,C_bug,qwen3.8-flash-next next loss,loss next qwen3.8-flash-next,3
+T-C1:A_ko_symptom,C_raw,gemma4 generate,gemma4 generate,2
+T-C1:A_ko_symptom,C_bug,gemma4 generate,gemma4 generate,2
+T-C1:B_ko_context,C_raw,generate sliding_attention cpu,cpu generate sliding_attention,3
+T-C1:B_ko_context,C_bug,generate sliding_attention cpu,cpu generate sliding_attention,3
+T-C2:B_ko_context,C_raw,trainer_state.json json best_model_checkpoint checkpoint true,best_model_checkpoint checkpoint json trainer_state.json true,5
+T-C2:B_ko_context,C_bug,trainer_state.json json best_model_checkpoint checkpoint true,checkpoint json true,5
+H-O:B_ko_context,C_raw,opencv,opencv,0
+H-O:B_ko_context,C_bug,opencv,opencv,0

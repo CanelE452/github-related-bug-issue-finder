@@ -1,0 +1,3 @@
+﻿repository,raw_documents,bug_documents,partial,core_reference_n,raw_reference_n,bug_reference_n
+opencv/opencv,387,232,True,6,6,5
+huggingface/transformers,390,114,True,6,6,4

@@ -1,0 +1,40 @@
+{
+  "status": "AWAITING_HUMAN_REVIEW",
+  "human_reviewers": 0,
+  "single_human_reviewer": false,
+  "review_pairs": 429,
+  "judged_pairs": 0,
+  "planned_queries": 36,
+  "complete_queries": 0,
+  "comparison_queries": 0,
+  "stages": {
+    "preservation": "VERIFIED",
+    "scoring": "IMPLEMENTED_TESTED",
+    "review_html": "READY",
+    "human_review": "AWAITING_HUMAN_REVIEW",
+    "mechanical_audit": "COMPLETE",
+    "reproduction": "REPRODUCED",
+    "K1": "DEFERRED_NO_VALIDATED_FAILURE",
+    "R1": "DEFERRED_NO_VALIDATED_FAILURE",
+    "E1": "AWAITING_EQUIVALENCE_REVIEW",
+    "E2": "BLOCKED_CONDITION_EVIDENCE",
+    "E3": "NO_CERTIFIED_CONTROL",
+    "manual_study": "PENDING_MANUAL_STUDY",
+    "summary": "NOT_APPLICABLE_YET"
+  },
+  "quality_figures": "NOT_GENERATED_PENDING_REVIEW",
+  "screenshot": "CAPTURED",
+  "budget": {
+    "logical_conditions": 12,
+    "phase_counts": {
+      "reproduce": 12
+    },
+    "compute_seconds": 94.13001429999713,
+    "query_encode_calls": 2,
+    "document_reembedding_calls": 0,
+    "cache_hit_documents": 1123,
+    "http_calls": 0,
+    "training_calls": 0,
+    "paid_api_calls": 0
+  }
+}

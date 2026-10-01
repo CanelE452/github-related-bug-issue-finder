@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-01T06:02:38.030492+00:00",
+  "fixture_not_actual_human_review": true,
+  "missing_profile_rejected": true,
+  "answer_persisted_after_reload": true,
+  "question_csv_actual_download_rows": 1,
+  "document_csv_actual_download_unreviewed_rows": 1,
+  "console_errors": 0,
+  "download_event_api_note": "Download event wait timed out, but both actual Windows Downloads files were read/validated and archived by exact SHA-256.",
+  "real_experiment_reviewers": 0
+}

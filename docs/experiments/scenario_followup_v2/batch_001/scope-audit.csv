@@ -1,0 +1,15 @@
+﻿case_id,cohort,doc_id,url,in_C_raw,in_C_bug,source_sha256,quality_status
+O-E1,core_development,opencv/opencv#29350,https://github.com/opencv/opencv/issues/29350,True,True,d062fdcf9e3c435c2d0e3be7ca3658b2daa22c3651d5eef26ae1251f7ab08022,UNJUDGED
+O-E2,core_development,opencv/opencv#28525,https://github.com/opencv/opencv/issues/28525,True,True,a5159d809a36c4374f2520277dc00517e66f2a59e1c30cacf8a23f9deb38f36f,UNJUDGED
+O-S1,core_development,opencv/opencv#29565,https://github.com/opencv/opencv/issues/29565,True,True,9846d4ccc31385e562fcc1dba99b738ae64d0672d8b50ae78b146ad6aa23f8e5,UNJUDGED
+O-S2,core_development,opencv/opencv#30090,https://github.com/opencv/opencv/issues/30090,True,False,39eb2539ff06ebd7366fedfde944ba48e5e5f6c8e7ea45917012f4df0a5b4cb6,UNJUDGED
+O-C1,core_development,opencv/opencv#28207,https://github.com/opencv/opencv/issues/28207,True,True,6001567ece60d03f5ec2bf900c312eeef3c028bba43091a5f6e0ca3c1e810a5a,UNJUDGED
+O-C2,core_development,opencv/opencv#29636,https://github.com/opencv/opencv/issues/29636,True,True,3d9d81539912d3d13c8873a22ca3f7e2245fab6f2453f6092a1aa2041210babd,UNJUDGED
+T-E1,core_development,huggingface/transformers#47879,https://github.com/huggingface/transformers/issues/47879,True,True,7ef5e8df30c34463ef196ba278e406442614b9ffdc653f9486b9c7564779d41e,UNJUDGED
+T-E2,core_development,huggingface/transformers#48346,https://github.com/huggingface/transformers/issues/48346,True,False,9d9102023c8a4eec0877e9d685ad54c5035a30e54d1cb5cca40c727361403a0b,UNJUDGED
+T-S1,core_development,huggingface/transformers#47752,https://github.com/huggingface/transformers/issues/47752,True,True,1133f1d9399ec48482a1957aa0a38e4c823425e6a698e18a0b99f9d67574acfe,UNJUDGED
+T-S2,core_development,huggingface/transformers#48826,https://github.com/huggingface/transformers/issues/48826,True,True,8a7ecd0c859c9e776f05e364572ae88479431a1c1f9402a57bb6b390c1a0c2d3,UNJUDGED
+T-C1,core_development,huggingface/transformers#48501,https://github.com/huggingface/transformers/issues/48501,True,True,aa30df8f51025c5400a0d56ee7e944dccf1f700c5a8fe88ff5a020677ed41d21,UNJUDGED
+T-C2,core_development,huggingface/transformers#48315,https://github.com/huggingface/transformers/issues/48315,True,False,5e213039d9ade4c15cb3cb52f3b77b18f2408cee890e5a48859a6ef2c9521110,UNJUDGED
+H-O,historical_probe,opencv/opencv#17687,https://github.com/opencv/opencv/issues/17687,False,False,6a3c3d2cce107454fa391241bfa752145801a895a67e30f692d7cce85beb93eb,UNJUDGED
+H-T,historical_probe,huggingface/transformers#24694,https://github.com/huggingface/transformers/issues/24694,False,False,4b3399d12d5a4d5c6bde34f8bdce118fa39f9edc430695c55412f15116b76726,UNJUDGED

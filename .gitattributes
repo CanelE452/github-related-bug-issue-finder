@@ -1,0 +1,2 @@
+# Preserve published artifact bytes so remote SHA-256 receipts match on Windows.
+docs/experiments/scenario_followup_v2/** -text
