@@ -1,0 +1,26 @@
+{
+  "run_id": "machine_001",
+  "purpose": "AI exploratory relevance assessment; not human validation",
+  "reviewer_type": "machine",
+  "reviewer_id": "codex_assistant",
+  "exposure": "previously_exposed_to_sources_and_some_rankings",
+  "selection_rule": "Three convenience-selected diagnostic cases; Korean B queries only; full frozen common pool per selected query",
+  "query_ids": [
+    "O-E1:B_ko_context",
+    "T-E1:B_ko_context",
+    "T-C2:B_ko_context"
+  ],
+  "parent_run": "data/scenario_pilot_v1/run_001",
+  "followup_batch": "data/scenario_followup_v2/batch_001",
+  "parent_rankings_sha256": "d7aa347c270128b095036ed025dcf17ad34099c73813a54b131cf13ec3f26ec0",
+  "retrieval_changes_authorized_by_human_evidence": false,
+  "human_approvals_created": 0,
+  "new_retrieval_conditions": 0,
+  "additional_paid_api_calls": 0,
+  "created_at": "2026-10-01T07:47:36.752349+00:00",
+  "rubric": {
+    "2": "Same symptom and important conditions; directly useful evidence for cause or remedy",
+    "1": "Relevant build / video processing / persisted checkpoint subtopic, but different error, stage, model or conditions; no direct fix established",
+    "0": "Only broad library/model/environment/error-word overlap; different task or subsystem"
+  }
+}

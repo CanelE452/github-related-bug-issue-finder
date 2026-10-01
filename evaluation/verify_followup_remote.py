@@ -13,7 +13,10 @@ from evaluation.scenario_followup import save
 
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--batch',required=True);parser.add_argument('--commit',required=True);args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--batch',required=True);parser.add_argument('--commit',required=True)
+    parser.add_argument('--paths',nargs='+',help='Specific artifact paths to verify within the published batch')
+    parser.add_argument('--ledger-batch',help='Reuse the same cumulative HTTP budget across follow-up outputs')
+    args=parser.parse_args()
     if len(args.commit)!=40 or any(c not in '0123456789abcdef' for c in args.commit):raise ValueError('full commit SHA required')
     batch=Path(args.batch);output=ROOT/'docs/experiments/scenario_followup_v2'/batch.name;repo='CanelE452/github-related-bug-issue-finder'
     git=['git','-c','safe.directory='+ROOT.as_posix()];remote=subprocess.check_output(git+['remote','get-url','origin'],cwd=ROOT,text=True).strip()
@@ -25,8 +28,14 @@ def main():
     paths=['README.md','report.md','status.json','lineage.json','casebook.md','casebook/O-E1.md','rankings/O-E1.jsonl','metrics_by_query.csv','metrics_summary.csv','review_progress.csv','figure_data/generation.json','artifact_manifest.json','tests/published-tree.json','tests/published-tree.txt']
     paths += [p for p in ['quick-review.md','quick-review-sample.json','tests/quick-review-download.json'] if (output/p).exists()]
     paths+=[p.relative_to(output).as_posix() for p in sorted((output/'images').glob('*.png'))]
+    if args.paths:
+        paths=list(dict.fromkeys(args.paths))
+        for path in paths:
+            target=(output/path).resolve()
+            if output.resolve() not in target.parents or not target.is_file():raise ValueError('Artifact must be an existing file inside the published batch')
     maximum=read(ROOT/'evaluation/scenario_followup_v2/config.json')['max_http_calls'];checked=[];calls=0;errors=[]
-    ledger_path=batch/'http-verification-ledger.json';ledger=read(ledger_path) if ledger_path.exists() else []
+    ledger_batch=Path(args.ledger_batch) if args.ledger_batch else batch
+    ledger_path=ledger_batch/'http-verification-ledger.json';ledger=read(ledger_path) if ledger_path.exists() else []
     archive=batch/'remote-verification'/args.commit;archive.mkdir(parents=True,exist_ok=True)
     with httpx.Client(timeout=30,headers={'Authorization':'Bearer '+values['password'],'Accept':'application/vnd.github.raw+json','X-GitHub-Api-Version':'2022-11-28'},follow_redirects=False) as client:
         for path in paths:

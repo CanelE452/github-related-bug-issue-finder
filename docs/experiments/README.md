@@ -4,3 +4,5 @@
 - [실행·검토 방법](../../evaluation/scenario_pilot_v1/README.md)
 
 - [사람 검토·후속 실험 v2](scenario_followup_v2/batch_001/README.md): 기존 순위 보존, 부분 검토 채점, 검토 HTML 및 기계적 진단. 실제 사람 판정 대기.
+
+- [AI 직접 예비 검토: 3사례·38쌍](scenario_followup_v2/machine_001/report.md): 기존 검색 결과 비교·원문 근거·악화/무차이 포함. 사람 검증과 분리합니다.

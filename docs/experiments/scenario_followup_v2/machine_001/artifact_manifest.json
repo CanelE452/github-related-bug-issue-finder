@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-10-01T08:02:46.632041+00:00",
+  "files": [
+    {
+      "path": "casebook.md",
+      "bytes": 28209,
+      "sha256": "5e4d0f5f289331b5a7fafd683a24665ee662a4682d2aa8f6298b174949974b93"
+    },
+    {
+      "path": "images/ai-comparison.png",
+      "bytes": 69395,
+      "sha256": "1fc11884edee2a6ff3674c4aa6c08f502292523b4ebfd3d425e34938ebfc0301"
+    },
+    {
+      "path": "machine_annotations.jsonl",
+      "bytes": 39924,
+      "sha256": "83d8278142c2fc3d4782027b16fd4801fa88f689497f722cb7c9230695baa963"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 2614,
+      "sha256": "7c04222931744d56be2c14cda161a90e813a7c8c652892296c327789f6621226"
+    },
+    {
+      "path": "paired_comparison.csv",
+      "bytes": 1010,
+      "sha256": "2add4ae11ea055b6259e30fa16f93aa800d74dc3150df6963c42bd6d9b90d153"
+    },
+    {
+      "path": "plan.json",
+      "bytes": 1245,
+      "sha256": "80eca0834e2fd6bd7a29276b7f7a109a6c57a7591e12a723af446e3e7437876b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 318,
+      "sha256": "79ba8eadea04f367923137e7f302968576abe01486ddd93fb9b7ea3908b8e392"
+    },
+    {
+      "path": "report.md",
+      "bytes": 5018,
+      "sha256": "13f01d2b5d24646fd36fdb216edcce7648c9415c0ab87591192ed4adb16e1bbf"
+    },
+    {
+      "path": "results.csv",
+      "bytes": 3848,
+      "sha256": "ed57e418b2e31184e56b8790414e59390808fdec6493fca03d03f0b4aaefc5ed"
+    },
+    {
+      "path": "summary.csv",
+      "bytes": 1173,
+      "sha256": "c1d64be05804a5d55b2251c26b8944d20334fff59ce77555b34d232314a4b9b4"
+    },
+    {
+      "path": "tests/published-tree.json",
+      "bytes": 5243,
+      "sha256": "92cfaf873fbc903a4dd8e73c2bb1949289dfa6015f482b376607ec121c2c04d0"
+    },
+    {
+      "path": "tests/published-tree.txt",
+      "bytes": 603,
+      "sha256": "edd875ccc1b62c2dab4343424b7f0840b41d49bb15c0daf767c8f6130511dc81"
+    },
+    {
+      "path": "tests/README.md",
+      "bytes": 1155,
+      "sha256": "dece40eac478faa15ab905b121700206261c5f9c09bdec197950812695fa4a09"
+    },
+    {
+      "path": "tests/rescore.txt",
+      "bytes": 210,
+      "sha256": "1218ab504d5f2f4936a02eaf5e03195ae1b004898810d385a45e7d94d6b12d43"
+    },
+    {
+      "path": "top5.csv",
+      "bytes": 18936,
+      "sha256": "7dbaf5c37b376a0510f0de973bc0e2bf1fb56ee5f9a436afc09fcd1d82f75a7e"
+    }
+  ],
+  "self_excluded": true
+}

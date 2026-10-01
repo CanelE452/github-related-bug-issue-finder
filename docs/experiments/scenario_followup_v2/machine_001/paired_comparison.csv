@@ -1,0 +1,13 @@
+﻿query_id,scope,comparison,ai_ndcg_delta,ai_result,ai_hit_delta
+O-E1:B_ko_context,C_raw,saved hybrid vs saved bm25,-0.08703245752405497,worse,0
+O-E1:B_ko_context,C_raw,saved hybrid vs saved semantic,0.0228651364085799,better,0
+O-E1:B_ko_context,C_bug,saved hybrid vs saved bm25,-0.10104155414609717,worse,0
+O-E1:B_ko_context,C_bug,saved hybrid vs saved semantic,0.0,tie,0
+T-E1:B_ko_context,C_raw,saved hybrid vs saved bm25,0.2662504294076692,better,0
+T-E1:B_ko_context,C_raw,saved hybrid vs saved semantic,0.17921797188361432,better,0
+T-E1:B_ko_context,C_bug,saved hybrid vs saved bm25,0.09218551435955935,better,0
+T-E1:B_ko_context,C_bug,saved hybrid vs saved semantic,-0.008856039786537706,worse,0
+T-C2:B_ko_context,C_raw,saved hybrid vs saved bm25,0.2196857600753077,better,0
+T-C2:B_ko_context,C_raw,saved hybrid vs saved semantic,0.0,tie,0
+T-C2:B_ko_context,C_bug,saved hybrid vs saved bm25,0.22854179986184536,better,0
+T-C2:B_ko_context,C_bug,saved hybrid vs saved semantic,-0.08703245752405497,worse,0

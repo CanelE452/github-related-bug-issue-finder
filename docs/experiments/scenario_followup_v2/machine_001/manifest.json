@@ -1,0 +1,45 @@
+{
+  "status": "AI_EXPLORATORY_COMPLETE",
+  "human_validation": false,
+  "human_reviewers": 0,
+  "official_quality_metrics": null,
+  "selected_queries": 3,
+  "annotated_pairs": 38,
+  "reused_ranking_conditions": 18,
+  "new_retrieval_conditions": 0,
+  "query_encodes": 0,
+  "document_encodes": 0,
+  "new_model_or_paid_api": false,
+  "new_algorithm_experiments": false,
+  "K1_R1_E1_E2_E3": "NOT_RUN_NO_HUMAN_EVIDENCE_GATE",
+  "parent_rankings_sha256": "d7aa347c270128b095036ed025dcf17ad34099c73813a54b131cf13ec3f26ec0",
+  "parent_manifest_sha256": "3a9fd33584c67484c7b450ef3ff2ff46a2ab1fa54780df4a221e84b6a23d89a5",
+  "parent_retrieval_code_hashes": {
+    "backend/app/search.py": "b1d07d4eb4562057776e7e9f2bafcd41bea321c5a1c259dad5ac09257b82d0d8",
+    "backend/app/domain.py": "1f0943382b580827ff11de2c71230e76bbca2855c8b768e5a064fd07b9bceb3c",
+    "backend/app/github.py": "ff109a41e894f65b1761c1b5d8521d5720f9001f5bf109527ea8c98dcb76b388",
+    "backend/app/semantic.py": "e5b7fd30daeaf7b8e84c9813a8570724b0c26bd2b660e84b080ef9025fd528bb",
+    "backend/app/config.py": "92de1c3111898abed1e170ac5d2ca5447c9898ca82ab43b71ea1b96dcf70270d",
+    "backend/app/storage.py": "091cca15142b2668c79cef2b026ec2b4f2dc6683dab002651b269da649c5f524",
+    "evaluation/scenario_eval.py": "8dcdb0fdf0cc03d5e71dd1231d141601ddd78845bf02dacc7f68e083649b6589",
+    "evaluation/scenario_report.py": "c4b6b56b71a3ea0a14d45e5ab3caf00b42326011716d29973464993c2846dfb9"
+  },
+  "parent_model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "selected_scope_versions": {
+    "opencv/opencv|C_raw": "d196969497930c67ac27d5c7cfd7da853424d25108a972beb46701ece5b13834",
+    "opencv/opencv|C_bug": "d4b3381db5eb92fddd33cc43d7b5db4514d42560636b74cdbc6c7eab314d5ef9",
+    "huggingface/transformers|C_raw": "9f1daeada493910cdd7f9e742512db3bff88b8530e94a66bae78b228aca5f3f9",
+    "huggingface/transformers|C_bug": "f7aaeb2fade781ca6dddc0ea54076e423f08d69d300e0947d02e45af0c0a4a33"
+  },
+  "annotations_sha256": "83d8278142c2fc3d4782027b16fd4801fa88f689497f722cb7c9230695baa963",
+  "plan_sha256": "80eca0834e2fd6bd7a29276b7f7a109a6c57a7591e12a723af446e3e7437876b",
+  "scorer_sha256": "54fa1dcf9f2f6531cd734749ee70a6c92e327719901ea293d14cd200aa52ec1b",
+  "parent_preservation_files": 813,
+  "figure": {
+    "source": "summary.csv",
+    "column": "ai_pooled_ndcg_at_5",
+    "generation": "python -m evaluation.machine_pilot --run data/scenario_followup_v2/machine_001",
+    "source_sha256": "c1d64be05804a5d55b2251c26b8944d20334fff59ce77555b34d232314a4b9b4",
+    "png_sha256": "1fc11884edee2a6ff3674c4aa6c08f502292523b4ebfd3d425e34938ebfc0301"
+  }
+}
