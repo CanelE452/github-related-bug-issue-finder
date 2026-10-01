@@ -13,6 +13,7 @@ from backend.app.search import tokenize, fuse
 from backend.app.storage import digest
 from evaluation.followup_scoring import resolve_reviews, query_metrics, score_records, extend_pool, csv_rows
 from evaluation.followup_review import package
+from evaluation.quick_review import quick_package
 from evaluation.followup_retrieval import k1_tokens, contribution, failure_gate, behavior_gate, Budget
 from evaluation.scenario_followup import save_csv, check_preservation
 from evaluation.scenario_eval import sha_file
@@ -191,6 +192,31 @@ def test_review_html_payload_safe_and_no_rank_metadata(tmp_path,sample):
 def test_csv_formula_export_only(tmp_path):
     original={'reason':'=HYPERLINK("bad")','evidence_quote':'+function','reviewer_id':'-fixture'};p=tmp_path/'review.csv';save_csv(p,[original]);text=p.read_text(encoding='utf-8-sig')
     assert "'=HYPERLINK" in text and original['reason'].startswith('=') and csv_rows(p)==[original]
+
+
+def test_quick_review_is_bounded_optional_and_separate_from_qrels(tmp_path,sample):
+    frozen=deepcopy((sample.queries,sample.pool,sample.documents))
+    page,payload=quick_package(tmp_path,sample.queries,sample.pool,sample.documents,11)
+    assert len(payload['items'])==3 and payload['query']['query_id']=='Q'
+    assert payload['purpose']=='optional_ui_feedback_not_evaluation_qrels'
+    assert all('rank' not in item and 'score' not in item and 'grade' not in item for item in payload['items'])
+    assert 'id="reviewer"' not in page.read_text(encoding='utf-8')
+    assert 'id="quick-skip"' in page.read_text(encoding='utf-8')
+    assert quick_package(tmp_path/'repeat',sample.queries,sample.pool,sample.documents,11)[1]==payload
+    assert (sample.queries,sample.pool,sample.documents)==frozen
+
+
+def test_quick_review_source_safety_and_small_pool(tmp_path,sample):
+    sample.documents['r/a#1']['body']='</script><script>alert(1)</script>'
+    page,payload=quick_package(tmp_path,sample.queries,sample.pool[:1],sample.documents,11)
+    text=page.read_text(encoding='utf-8')
+    assert len(payload['items'])==1 and '</script><script>alert(1)</script>' not in text
+    script=(Path(__file__).parents[2]/'evaluation/scenario_followup_v2/quick-review.js').read_text(encoding='utf-8')
+    h=base64.b64encode(hashlib.sha256(script.encode()).digest()).decode()
+    assert "script-src 'sha256-"+h+"'" in text and 'fetch(' not in script
+    sample.documents['r/a#1']['html_url']='javascript:alert(1)'
+    with pytest.raises(ValueError,match='Unsafe issue URL'):
+        quick_package(tmp_path,sample.queries,sample.pool[:1],sample.documents,11)
 
 
 def test_public_masking_does_not_change_original():

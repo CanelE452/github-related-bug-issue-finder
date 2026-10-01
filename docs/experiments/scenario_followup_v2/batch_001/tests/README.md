@@ -1,6 +1,6 @@
 # 게시 코드 테스트
 
-최종 게시 코드: **80 passed, 1 warning**. 실행 명령과 코드·테스트 파일별 SHA-256은 [published-tree.json](published-tree.json), 실제 출력은 [published-tree.txt](published-tree.txt)에 있습니다. 스테이징된 코드만 Git archive로 분리해 검사했으며, 기존 미커밋 코드 리뷰 기능은 포함하지 않았습니다.
+최종 게시 코드: **82 passed, 1 warning**. 실행 명령과 코드·테스트 파일별 SHA-256은 [published-tree.json](published-tree.json), 실제 출력은 [published-tree.txt](published-tree.txt)에 있습니다. 스테이징된 코드만 Git archive로 분리해 검사했으며, 기존 미커밋 코드 리뷰 기능은 포함하지 않았습니다.
 
 앞선 실행도 보존했습니다.
 
@@ -12,3 +12,5 @@
 FastAPI/Starlette의 httpx 사용 중단 예고 경고 1건은 남아 있습니다. 이번 평가 작업에서 기존 운영 의존성은 변경하지 않았습니다.
 
 [검토 화면 검증](ui-test-log.json)은 합성 입력을 이용한 UI 기능 검사이며 사람의 관련성 판정이 아닙니다. [실제 빈 CSV 다운로드·재입력 검사](ui-blank-downloads.json)는 Chrome에서 38질의·429쌍 파일이 저장됐음을 확인합니다. 미작성 CSV로는 품질 점수를 확정하지 않습니다.
+
+질문 1개·후보 최대 3개로 축소한 게시 코드의 82개 테스트가 통과했습니다. [축소 전 통과 기록](published-tree-before-quick.txt)도 보존했습니다. 기본 화면의 이름 입력 제거·표본 상한·공식 qrels 분리·원문 주입 방어를 추가 검사했습니다.

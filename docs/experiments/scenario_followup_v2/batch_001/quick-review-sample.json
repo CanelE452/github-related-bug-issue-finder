@@ -1,0 +1,33 @@
+{
+  "purpose": "optional_ui_feedback_not_evaluation_qrels",
+  "query": {
+    "query_id": "T-E1:B_ko_context",
+    "query_sha256": "af17c35898fef9b353bcdeebcfe4ded264e59d0cb9d8b6de336053e97285f2c6",
+    "query_text": "[PROBLEM]\nGemma4-E2B-IT의 영상 처리 중 forward에서 속성 오류로 중단됩니다.\n\n[ERROR]\nAttributeError: 'tuple' object has no attribute 'to'\n\n[ENVIRONMENT]\nTransformers 5.15.0.dev0; WSL2 Linux; Python 3.13.14; PyTorch 2.13.0+cu132; NVIDIA RTX 4080 Laptop"
+  },
+  "items": [
+    {
+      "review_item_id": "78c03ea2f7516053",
+      "doc_id": "huggingface/transformers#48964",
+      "document_sha256": "24ca0f398a5e4081992fe07c36fc57dd6b935e927ea76f079bbff32cee1a9f87",
+      "title": "Issue doing PEFT on Embedding Gemma w/ new classifier head",
+      "url": "https://github.com/huggingface/transformers/issues/48964"
+    },
+    {
+      "review_item_id": "b8381952210354f2",
+      "doc_id": "huggingface/transformers#49051",
+      "document_sha256": "69230b79d5ed500785962b2babfb627b896f315fa23232e213615fd72aee93ba",
+      "title": "Gemma 1 checkpoints silently use exact GELU instead of gelu_pytorch_tanh since v4.48.0 (#35235 removed the hidden_activation guard)",
+      "url": "https://github.com/huggingface/transformers/issues/49051"
+    },
+    {
+      "review_item_id": "4c332f3e78c7d516",
+      "doc_id": "huggingface/transformers#47448",
+      "document_sha256": "faf94cfd1d6f89f9b2a9268d1238902cb315528ceb5416bf22e42e8847dcfb3f",
+      "title": "gemma4 12B arch is not recognized!",
+      "url": "https://github.com/huggingface/transformers/issues/47448"
+    }
+  ],
+  "selection": "one frozen query; seeded sample of up to three common-pool documents; no rank selection",
+  "sample_id": "278a04b8e8074fafa94c98ce39313145507e0d0b6675c1922da47e15b9a087e6"
+}

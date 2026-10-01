@@ -13,7 +13,7 @@ QUERY_FIELDS = ['query_id','query_sha256','symptom_faithful','no_solution_leakag
 DOCUMENT_FIELDS = ['review_item_id','query_id','query_sha256','doc_id','document_sha256','grade','condition_relation','evidence_scope','evidence_quote','evidence_url','reason','exposure','reviewer_type','reviewer_id','reviewed_at','review_status']
 
 
-def package(directory, queries, cases, pool, documents, seed):
+def package(directory, queries, cases, pool, documents, seed, filename='review.html'):
     directory = Path(directory); directory.mkdir(parents=True, exist_ok=True)
     items = []
     for item in pool:
@@ -52,5 +52,5 @@ def package(directory, queries, cases, pool, documents, seed):
 <footer>일부만 검토해도 CSV 2개를 저장할 수 있습니다. 내려받은 파일을 제공하면 같은 검색 결과로 다시 채점합니다. 질문 승인과 해당 질문의 공통 문서 목록 판정이 모두 완료된 경우만 공식 지표를 계산합니다. 원문·명령은 실행하지 않습니다.</footer>
 <script id="payload" type="application/octet-stream">PAYLOAD</script><script>SCRIPT</script></body></html>'''
     for key, value in [('SCRIPT_HASH',script_hash),('CSS',css),('PAYLOAD',encoded),('SCRIPT',script)]:page = page.replace(key,value,1)
-    path = directory/'review.html';path.write_text(page,encoding='utf-8',newline='\n')
+    path = directory/filename;path.write_text(page,encoding='utf-8',newline='\n')
     return path

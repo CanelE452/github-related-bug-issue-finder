@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-10-01T06:35:25.787481+00:00",
+  "created_at": "2026-10-01T07:23:08.887036+00:00",
   "files": [
     {
       "path": "budget.json",
@@ -104,7 +104,7 @@
     {
       "path": "figure_data/generation.json",
       "bytes": 2156,
-      "sha256": "e07c8645adef215bae37f2e678225ae2dc250915fbb8cc1f77bae9c73b8bec7e"
+      "sha256": "405c5e6f45e44280c55e9e6e89455616f70f4ba7c1413f5aa66a9a08fdbc1c2b"
     },
     {
       "path": "figure_data/review-progress.csv",
@@ -125,6 +125,11 @@
       "path": "figure_data/token-diagnostic.csv",
       "bytes": 3608,
       "sha256": "554ed56fbe776237b94d7f05b830e77a9177166f681060edf5482907acc3b446"
+    },
+    {
+      "path": "images/quick-review-screen.png",
+      "bytes": 94931,
+      "sha256": "7389e97927787c7c808a690d4336de88db0eb3b4b5e1df3bdb4ff8d692ec1b3d"
     },
     {
       "path": "images/review-progress.png",
@@ -153,8 +158,8 @@
     },
     {
       "path": "lineage.json",
-      "bytes": 5262,
-      "sha256": "c8457abbddacc8b728440dcf6658329c66d79fc3d27ae415ca5c213ddb0e157b"
+      "bytes": 5353,
+      "sha256": "f7dd875d0681232b5476d82526e7f63ea425913c4d447cfe156419690067ce4a"
     },
     {
       "path": "metrics_by_query.csv",
@@ -170,6 +175,16 @@
       "path": "paired_changes.csv",
       "bytes": 118,
       "sha256": "961083bde94b98dc82f53c77360baee9953b8313b993360307cba87feaf6e856"
+    },
+    {
+      "path": "quick-review-sample.json",
+      "bytes": 1802,
+      "sha256": "7a0da233fcd83241b48607872d72d59a48bfa89e3a7bccf6138e889604b7b02d"
+    },
+    {
+      "path": "quick-review.md",
+      "bytes": 2271,
+      "sha256": "563a45363127765a13d2411e227ceeb34b5456815bcbc19759ef3079e68292a3"
     },
     {
       "path": "rankings/H-O.jsonl",
@@ -243,13 +258,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 479,
-      "sha256": "03a0becd03be6ff5aea7d9d2d9fa161476dfdf70c4740636de194a25137f48da"
+      "bytes": 659,
+      "sha256": "88bacafde1995bd452b7b9f6e939e5a64d532e64d556b8edbbfcf46e288b915b"
     },
     {
       "path": "report.md",
-      "bytes": 6352,
-      "sha256": "2972b605595e81504f40578a89ff44218bace66f91447301e9392b4492364446"
+      "bytes": 6770,
+      "sha256": "45333482094b1cda1a407db7911327e219130421b043d4b000b083d551fbf2d7"
     },
     {
       "path": "reproduction.json",
@@ -337,19 +352,34 @@
       "sha256": "687b2a7a21a1880754d058bcb51991455b33dedd8c793eba9ea51fe7dc68ce28"
     },
     {
-      "path": "tests/published-tree.json",
+      "path": "tests/published-tree-before-quick.json",
       "bytes": 4804,
       "sha256": "814633c37c752d20ea4a13ff58bfcb4e3f28fdb5fc0b2beab3f53a57e69f6fe5"
     },
     {
-      "path": "tests/published-tree.txt",
+      "path": "tests/published-tree-before-quick.txt",
       "bytes": 603,
       "sha256": "3fef66d52d98e60853a083d817f339a2cecf77fa6c224e784e334f816a539ccb"
     },
     {
+      "path": "tests/published-tree.json",
+      "bytes": 5029,
+      "sha256": "edd5c8ff50e0067fe29f410b998dbf3c953a558799d1bcbac529d29b4c609bcf"
+    },
+    {
+      "path": "tests/published-tree.txt",
+      "bytes": 603,
+      "sha256": "fc8a337c0d828ecbe8a29ab67cd641c676409b3df0e40ad145e14f82b2ba6a72"
+    },
+    {
+      "path": "tests/quick-review-download.json",
+      "bytes": 305,
+      "sha256": "8d9bdd3245dcce966795b586c7142759f477b1bd80d8f527fbe47d068665656d"
+    },
+    {
       "path": "tests/README.md",
-      "bytes": 1905,
-      "sha256": "86f1053800be95f7e9d62ebcb169a555714fbd9812b2b19e03b619bea4bc341d"
+      "bytes": 2216,
+      "sha256": "329df048da6bf6db5ebf7501b9d0eace631d1b32f1378e09387860b50108ed70"
     },
     {
       "path": "tests/ui-blank-downloads.json",

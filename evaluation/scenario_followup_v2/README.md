@@ -2,7 +2,15 @@
 
 부모 `scenario_pilot_v1/run_001`은 읽기 전용입니다. 운영 검색은 바꾸지 않습니다. 사용자 요청에 따라 새 브랜치 없이 **main**에 게시합니다.
 
-## 실행
+## 기본 화면을 작게 변경
+
+사용자 요청에 따라 `review/review.html`은 **질문 1개·후보 문서 최대 3개**만 표시하는 선택적 간단 확인 화면입니다. 이름·검토자 식별명·질문 승인·시간 입력은 요구하지 않습니다. 후보는 같은 동결 질의의 공통 풀에서 고정 seed로 추출하며, 순위·검색 방식·점수는 숨깁니다. 관련성 선택과 선택적 한 줄 의견만 `quick_feedback.csv` 한 개로 저장합니다. 모름·부분 답변·검토 건너뛰기를 허용합니다.
+
+이 작은 표본은 사용성 확인용 의견이며 공식 qrels와 다릅니다. `resume --reviews`에 넣지 마세요. 자동으로 질의를 승인하거나 전체 검색 정확도·실패 게이트를 확정하지 않습니다. 기존 채점 결과·사람 검토 양식·부모 검색 결과는 그대로 보존합니다. 앱 기능 검증은 기존 코드 테스트와 검색 재현으로 수행하며 사람이 전부 검토해야 사용할 수 있는 구조가 아닙니다.
+
+아래 정밀 평가 절차와 전체 검토 화면 `review/full-review.html`은 필요할 때 쓰는 선택 사항입니다.
+
+## 정밀 평가 실행
 
 ```powershell
 .venv/Scripts/python.exe -m evaluation.scenario_followup audit --parent-run data/scenario_pilot_v1/run_001 --out data/scenario_followup_v2/batch_001

@@ -1,0 +1,10 @@
+{
+  "purpose": "UI download check; not human relevance judgments",
+  "queries": 1,
+  "documents": 3,
+  "csv_bytes": 1088,
+  "csv_sha256": "78627a90f885ab69bfe39dad13045776a557c61beb783df4c17f41401f86e4b3",
+  "all_answers_blank": true,
+  "no_reviewer_name_or_id": true,
+  "official_qrels_changed": false
+}

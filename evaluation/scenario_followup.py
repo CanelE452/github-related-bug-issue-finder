@@ -12,6 +12,7 @@ from backend.app.domain import issue_text, query_text
 from backend.app.storage import digest
 from evaluation.scenario_eval import read, rows, sha_file, now, corpus
 from evaluation.followup_review import package, QUERY_FIELDS, DOCUMENT_FIELDS
+from evaluation.quick_review import quick_package
 from evaluation.followup_scoring import csv_rows, resolve_reviews, score_records
 
 CONFIG = ROOT/'evaluation/scenario_followup_v2/config.json'
@@ -120,12 +121,13 @@ def batch_data(batch):
 def prepare_review(args):
     batch=Path(args.batch);d=batch_data(batch)
     pool=read(batch/'current-pool.json') if (batch/'current-pool.json').exists() else d['pool']
-    path=package(batch/'review',d['queries'],d['cases'],pool,d['documents'],read(CONFIG)['seed'])
+    full_path=package(batch/'review',d['queries'],d['cases'],pool,d['documents'],read(CONFIG)['seed'],filename='full-review.html')
+    path,quick=quick_package(batch/'review',d['queries'],pool,d['documents'],read(CONFIG)['seed'])
     for filename,fieldnames,records in [('query_reviews.csv',QUERY_FIELDS,[{'query_id':q['query_id'],'query_sha256':q['query_sha256'],'review_status':'unreviewed'} for q in d['queries'].values()]),
                                        ('human_reviews.csv',DOCUMENT_FIELDS,[{**x,'grade':'','reviewer_type':'','reviewer_id':'','reviewed_at':'','review_status':'unreviewed','reason':'','evidence_quote':''} for x in pool])]:
         target=batch/'review'/filename
         if not target.exists():save_csv(target,records,fieldnames)
-    save(batch/'review/package.json',{'pool_version':digest(pool),'items':len(pool),'queries':len(d['queries']),'html_sha256':sha_file(path),'generated_at':now(),'rank_method_score_hidden':True,'status':'AWAITING_HUMAN_REVIEW'})
+    save(batch/'review/package.json',{'pool_version':digest(pool),'items':len(pool),'queries':len(d['queries']),'html_sha256':sha_file(path),'full_html_sha256':sha_file(full_path),'quick_sample':quick,'generated_at':now(),'rank_method_score_hidden':True,'status':'AWAITING_HUMAN_REVIEW','default_mode':'optional_one_query_three_documents','quick_feedback_is_official_qrels':False})
     print(path.resolve())
 
 

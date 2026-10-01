@@ -23,6 +23,7 @@ def main():
     values=dict(line.split('=',1) for line in credential.stdout.splitlines() if '=' in line)
     if not values.get('password'):raise ValueError('existing GitHub credential not available')
     paths=['README.md','report.md','status.json','lineage.json','casebook.md','casebook/O-E1.md','rankings/O-E1.jsonl','metrics_by_query.csv','metrics_summary.csv','review_progress.csv','figure_data/generation.json','artifact_manifest.json','tests/published-tree.json','tests/published-tree.txt']
+    paths += [p for p in ['quick-review.md','quick-review-sample.json','tests/quick-review-download.json'] if (output/p).exists()]
     paths+=[p.relative_to(output).as_posix() for p in sorted((output/'images').glob('*.png'))]
     maximum=read(ROOT/'evaluation/scenario_followup_v2/config.json')['max_http_calls'];checked=[];calls=0;errors=[]
     ledger_path=batch/'http-verification-ledger.json';ledger=read(ledger_path) if ledger_path.exists() else []

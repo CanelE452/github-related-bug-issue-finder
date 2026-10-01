@@ -41,7 +41,7 @@
 
 ## 사람이 작성할 검토와 재개
 
-로컬 `data/scenario_followup_v2/batch_001/review/review.html`을 Chrome에서 여세요. 실제 Chrome CSV 38행·429행 다운로드와 CLI 재입력을 확인했습니다. Codex 안쪽 브라우저에서는 다운로드가 실제 파일로 저장되지 않는 경우가 있어 Chrome을 권장합니다. 질문 검토와 관련성 검토를 각각 CSV로 내려받아 실제 경로를 지정합니다. 미작성 행은 그대로 두어도 됩니다. 브라우저 임시 저장은 백업을 대신하지 않으므로 CSV를 저장하세요. 질문 원문과 근거를 먼저 확인하고 순위가 보이는 사례집을 읽었다면 exposure에 표시하세요. 공개 [빈 양식](review_queue/)은 완료 판정이 아닙니다.
+기본 화면 `data/scenario_followup_v2/batch_001/review/review.html`은 질문 1개·이슈 최대 3개만 보는 선택적 간단 확인입니다. 이름 입력 없이 CSV 한 개로 저장하며 검토를 건너뛰어도 앱 작동 확인에는 영향이 없습니다. 간단 의견은 공식 qrels나 실패 게이트에 자동 반영하지 않습니다. [축소 안내](quick-review.md)를 참고하세요. 다음 절차는 선택적인 정밀 평가용 `review/full-review.html`에만 해당합니다. 실제 Chrome CSV 38행·429행 다운로드와 CLI 재입력을 확인했습니다. Codex 안쪽 브라우저에서는 다운로드가 실제 파일로 저장되지 않는 경우가 있어 Chrome을 권장합니다. 질문 검토와 관련성 검토를 각각 CSV로 내려받아 실제 경로를 지정합니다. 미작성 행은 그대로 두어도 됩니다. 브라우저 임시 저장은 백업을 대신하지 않으므로 CSV를 저장하세요. 질문 원문과 근거를 먼저 확인하고 순위가 보이는 사례집을 읽었다면 exposure에 표시하세요. 공개 [빈 양식](review_queue/)은 완료 판정이 아닙니다.
 
 ```powershell
 .venv/Scripts/python.exe -m evaluation.scenario_followup resume --batch data/scenario_followup_v2/batch_001 --query-reviews "$env:USERPROFILE/Downloads/query_reviews.completed.csv" --reviews "$env:USERPROFILE/Downloads/human_reviews.completed.csv"

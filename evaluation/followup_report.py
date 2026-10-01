@@ -84,7 +84,7 @@ def report(batch):
     for r in rrf:r['is_reference']=r['doc_id'] in d['cases'][d['queries'][r['query_id']]['case_id']]['source_doc_ids']
     reproduction=read(batch/'reproduction.json') if (batch/'reproduction.json').exists() else {'status':'PENDING','conditions':0}
     budget=read(batch/'budget.json') if (batch/'budget.json').exists() else {'logical_conditions':0,'http_calls':0}
-    save(output/'lineage.json',{**d['lineage'],**receipt,'review_html_code_hashes':{f.name:sha_file(f) for f in (ROOT/'evaluation/scenario_followup_v2').glob('review.*')},'parent_not_modified':True})
+    save(output/'lineage.json',{**d['lineage'],**receipt,'review_html_code_hashes':{f.name:sha_file(f) for f in (ROOT/'evaluation/scenario_followup_v2').glob('*review.*')},'parent_not_modified':True})
     experiment_receipts=[read(p) for p in sorted((batch/'experiments').glob('*/receipt.json'))] if (batch/'experiments').exists() else []
     experiment_states={r['experiment']:r['status'] for r in experiment_receipts}
     save(output/'status.json',{'status':score['state'],'human_reviewers':score['human_reviewers'],'single_human_reviewer':score['single_human_reviewer'],'review_pairs':score['pool_pairs'],'judged_pairs':score['judged_pairs'],'planned_queries':score['planned_queries'],'complete_queries':score['complete_queries'],'comparison_queries':score['comparison_queries'],
@@ -188,7 +188,7 @@ def report(batch):
 
 ## 사람이 작성할 검토와 재개
 
-로컬 `data/scenario_followup_v2/{batch.name}/review/review.html`을 Chrome에서 여세요. 실제 Chrome CSV 38행·429행 다운로드와 CLI 재입력을 확인했습니다. Codex 안쪽 브라우저에서는 다운로드가 실제 파일로 저장되지 않는 경우가 있어 Chrome을 권장합니다. 질문 검토와 관련성 검토를 각각 CSV로 내려받아 실제 경로를 지정합니다. 미작성 행은 그대로 두어도 됩니다. 브라우저 임시 저장은 백업을 대신하지 않으므로 CSV를 저장하세요. 질문 원문과 근거를 먼저 확인하고 순위가 보이는 사례집을 읽었다면 exposure에 표시하세요. 공개 [빈 양식](review_queue/)은 완료 판정이 아닙니다.
+기본 화면 `data/scenario_followup_v2/{batch.name}/review/review.html`은 질문 1개·이슈 최대 3개만 보는 선택적 간단 확인입니다. 이름 입력 없이 CSV 한 개로 저장하며 검토를 건너뛰어도 앱 작동 확인에는 영향이 없습니다. 간단 의견은 공식 qrels나 실패 게이트에 자동 반영하지 않습니다. [축소 안내](quick-review.md)를 참고하세요. 다음 절차는 선택적인 정밀 평가용 `review/full-review.html`에만 해당합니다. 실제 Chrome CSV 38행·429행 다운로드와 CLI 재입력을 확인했습니다. Codex 안쪽 브라우저에서는 다운로드가 실제 파일로 저장되지 않는 경우가 있어 Chrome을 권장합니다. 질문 검토와 관련성 검토를 각각 CSV로 내려받아 실제 경로를 지정합니다. 미작성 행은 그대로 두어도 됩니다. 브라우저 임시 저장은 백업을 대신하지 않으므로 CSV를 저장하세요. 질문 원문과 근거를 먼저 확인하고 순위가 보이는 사례집을 읽었다면 exposure에 표시하세요. 공개 [빈 양식](review_queue/)은 완료 판정이 아닙니다.
 
 ```powershell
 .venv/Scripts/python.exe -m evaluation.scenario_followup resume --batch data/scenario_followup_v2/{batch.name} --query-reviews "$env:USERPROFILE/Downloads/query_reviews.completed.csv" --reviews "$env:USERPROFILE/Downloads/human_reviews.completed.csv"
@@ -207,7 +207,7 @@ K1/R1 및 E1/E2/E3는 [실행 도구·승인 입력 계약](../../../../evaluati
 공개 자료로 순위·수치·보고를 감사할 수 있습니다. 정확한 임베딩 재실행에는 gitignored 동결 스냅샷과 고정 모델 캐시가 필요합니다. 전체 저장소나 일반 관련성을 대표하지 않는 12개 재구성 개발 사례입니다. 원문 작성 시 원인·해결책을 읽은 노출 가능성과 실제 검토 노출을 기록합니다. 구 run·질의·사람 원본은 덮어쓰지 않았습니다. 사용자 요청에 따라 main에만 게시하며 강제 push/자동 병합은 하지 않습니다.
 '''
     (output/'report.md').write_text(report_text,encoding='utf-8',newline='\n')
-    (output/'README.md').write_text(f'# {batch.name} · {score["state"]}\n\n실제 사람 {score["human_reviewers"]}명 · 검토 {score["judged_pairs"]}/{score["pool_pairs"]}쌍 · 비교 {score["comparison_queries"]}/{score["planned_queries"]}질의.\n\n[보고서와 실행·재개 명령](report.md) · [전체 사례집](casebook.md) · [원자료와 그림 생성 조건](figure_data/) · [테스트](tests/)\n\n![실제 검토 화면](images/review-screen.png)\n\n![검토 진행](images/review-progress.png)\n\n품질 수치는 사람 판정의 공통 분모가 갖춰질 때만 계산합니다. 부모 run_001은 보존했습니다.\n',encoding='utf-8',newline='\n')
+    (output/'README.md').write_text(f'# {batch.name} · {score["state"]}\n\n[선택적 간단 확인: 질문 1개·이슈 최대 3개·이름 입력 없음](quick-review.md)으로 기본 화면을 줄였습니다. 전체 검토는 필수가 아닙니다.\n\n실제 사람 {score["human_reviewers"]}명 · 검토 {score["judged_pairs"]}/{score["pool_pairs"]}쌍 · 비교 {score["comparison_queries"]}/{score["planned_queries"]}질의.\n\n[보고서와 실행·재개 명령](report.md) · [전체 사례집](casebook.md) · [원자료와 그림 생성 조건](figure_data/) · [테스트](tests/)\n\n![실제 검토 화면](images/review-screen.png)\n\n![검토 진행](images/review-progress.png)\n\n품질 수치는 사람 판정의 공통 분모가 갖춰질 때만 계산합니다. 부모 run_001은 보존했습니다.\n',encoding='utf-8',newline='\n')
     artifact_manifest(output)
     return output
 
