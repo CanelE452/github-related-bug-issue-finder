@@ -1,5 +1,7 @@
 # Issue Finder
 
+**현재 목표: 주제 구현 가능성 확인.** 실제 수집·검색 결과와 한국어 사례는 [구현 가능성 확인 보고서](docs/feasibility.md)에 정리했습니다. 전체 검색 정확도나 모든 오류의 해결을 검증한 것은 아닙니다.
+
 한국어·영어 문제 설명과 선택적인 오류 메시지·환경 정보로 공개 GitHub 저장소의 관련 Bug Issue를 찾는 로컬 웹 앱입니다.
 
 **React + FastAPI + SQLite + BM25 + multilingual-e5-small + RRF**. 로그 파싱·정규화·자동 중복 확정·해결책 생성은 포함하지 않습니다.
